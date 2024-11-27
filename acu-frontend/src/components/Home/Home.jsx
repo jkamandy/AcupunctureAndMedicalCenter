@@ -27,7 +27,7 @@ const Home = () => {
             </div>
             {/* <Navbar/> */}
         <div className='h-[91%] text-[#D6D6D6] flex justify-center items-center'>
-            <div className='relative'> <span className='text-[80px] font-medium font-spartan tracking-[-2px] flex gap-12 '>Compassion with us is a <img className='absolute right-[205px] top-1' src={AMCLogo}></img>radition</span> </div>
+            <div className='relative'> <span className='text-[80px] font-medium font-spartan tracking-[-2px] flex gap-12 '>Compassion with us is a <img className='absolute right-[205px] top-1' src={AMCLogo}></img>radition</span></div>
         </div>
 
         <div className='h-screen text-[#D6D6D6] flex justify-center items-center'>
