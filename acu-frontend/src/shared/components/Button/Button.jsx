@@ -17,10 +17,10 @@ const Button = ({ label, type = 'button', onClick, className = '', disabled = fa
         type={type}
         onClick={onClick}
       //   class="border-[1px] border-black p-1 m-1"
-        className={`${bordered && "border-[1px] border-[#656565] rounded-lg"} p-1 my-1 mx-5 hover:scale-105`}
+        className={`${bordered && "border-[1px] border-[#656565] hover:border-[transition:color_0.3s_ease-in-out;] hover:border-[#92BF7C] rounded-lg"} p-1 my-1 mx-2 hover:scale-105`}
         disabled={disabled}
       >
-      <span className='m-3 uppercase text-[19px] font-normal font-spartan tracking-[-0.1px] text-[#656565] group-hover:underline group-hover:text-[#92BF7C] group-hover:opacity-80'>
+      <span className='m-3 uppercase text-[14px] font-normal font-spartan tracking-[-0.1px] text-[#656565] group-hover:underline group-hover:text-[#92BF7C] group-hover:[transition:color_0.3s_ease-in-out;] group-hover:opacity-80'>
       {label}
       </span>
       </button>
