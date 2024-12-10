@@ -32,6 +32,12 @@ const Navbar = () => {
         />
         <Button
           className="mx-2"
+          label="Testimonials" 
+          onClick={handleClick} 
+          // className="border-[1px] border-black p-1 m-1" 
+        />
+        <Button
+          className="mx-2"
           label="FAQ" 
           onClick={handleClick} 
           // className="border-[1px] border-black p-1 m-1" 
