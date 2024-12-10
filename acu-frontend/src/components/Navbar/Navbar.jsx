@@ -19,21 +19,25 @@ const Navbar = () => {
       </div>
       <div className='flex items-center '>
         <Button
+          className="mx-2"
           label="About" 
           onClick={handleClick} 
           // className="border-[1px] border-black p-1 m-1" 
         />
         <Button
+          className="mx-2"
           label="Services" 
           onClick={handleClick} 
           // className="border-[1px] border-black p-1 m-1" 
         />
         <Button
+          className="mx-2"
           label="FAQ" 
           onClick={handleClick} 
           // className="border-[1px] border-black p-1 m-1" 
         />
         <Button
+          className="mx-2"
           label="Contact" 
           onClick={handleClick}
           // bordered={true} //
@@ -41,15 +45,16 @@ const Navbar = () => {
         />
         <div className='flex flex-col items-center justify-center'>
           <Button
+            className="mx-2"
             label="Schedule an Appointment" 
             onClick={handleClick}
             bordered={true} //
             // className="border-[1px] border-black p-1 m-1" 
           />
-          <div className='flex items-center justify-center hover:scale-105 hover:cursor-pointer group'>
+          {/* <div className='flex items-center justify-center hover:scale-105 hover:cursor-pointer group'>
             <FaPhone className='text-[14px] mr-2 group-hover:text-[#92BF7C]'/>
             <span className='font-spartan uppercase text-[12px] group-hover:text-[#92BF7C]'> (949)-206-1040 </span>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

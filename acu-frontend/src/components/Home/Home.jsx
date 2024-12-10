@@ -11,6 +11,7 @@ import { IoChevronDownSharp } from "react-icons/io5";
 import Footer from '../Footer/Footer';
 import Testimonals from '../Testimonals/Testimonials';
 import About from '../About/About';
+import Button from '../../shared/components/Button/Button';
 
 
 
@@ -41,6 +42,10 @@ const Home = () => {
     });
   };
 
+  const handleClick = () => {
+    // alert('Button clicked!');
+  };
+
   return (
     <div className='relative z-0 w-full h-screen'>
         {/* <img className={`h-auto w-screen opacity-30 self-center fixed ${isVisible ? "backdrop-blur-sm" : "blur-lg"} transition duration-500 ease-in-out`} src={AMCbg}></img> */}
@@ -64,7 +69,22 @@ const Home = () => {
        
         <div className='h-screen text-[#D6D6D6] flex flex-col justify-center items-center'>
             <div className='absolute top-24'><span className='text-[#D6D6D6] font-spartan font-light drop-shadow-md'>Rancho Santa Margarita  •  (949)-206-1040</span>   </div>
-            <div className='relative'> <span className='text-[80px] font-medium font-spartan tracking-[-2px] flex gap-12 drop-shadow-md'>Compassion with us is a <img className='absolute right-[205px] top-1' src={AMCLogo}></img>radition</span></div>
+            <div className='flex flex-col absolute left-20 [&_h1]:leading-[90px] w-[800px] h-auto'>
+              <div className='relative mt-10'> <h1 className='text-[85px] font-medium font-spartan tracking-[-3px] flex gap-12 drop-shadow-md'>Compassion with us</h1></div>
+              <div className='relative'><h1 className='relative text-[85px] font-medium font-spartan tracking-[-3px] flex gap-12 drop-shadow-md'>is a <img className='absolute left-[92px] bottom-0 scale-90' src={AMCLogo}></img>radition</h1></div>
+
+              <div className='relative mt-5'><span className='text-[18px] font-spartan leading-[18px] font-light pt-10'>All new patients receive a <span className='font-semibold'>complementary</span> half-hour consult with our head physician to establish a personalized care plan. Schedule your free consultation now!</span></div>
+              <div className='flex'>
+                <Button
+                  label="Schedule an Appointment" 
+                  onClick={handleClick}
+                  bordered={true} //
+                  // className="border-[1px] border-black p-1 m-1" 
+                  className="mx-0 mt-5"
+                />
+              </div>
+            </div>
+            
             <div className='absolute bottom-12 text-[32px]'>
               <IoChevronDownSharp onClick={scrollDown} className={`hover:cursor-pointer animate-pulse-down hover:text-[#92BF7C]  transition-opacity duration-500  ${isVisible ? "opacity-100" : "opacity-0 pointer-events-none"}`} />
             </div>

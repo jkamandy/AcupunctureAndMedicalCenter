@@ -6,6 +6,40 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}", 
   ],
   theme: {
+    screens: {
+      "3xs": "330px",
+      "2xs": "400px",
+      xs: "605px",
+
+      sm: "640px",
+      // => @media (min-width: 640px) { ... }
+
+      md: "768px",
+      // => @media (min-width: 768px) { ... }
+
+      "custom-lg": "992px",
+      // => @media (min-width: 992px) { ... }
+
+      lg: "1024px",
+
+      "2lg": "1200px",
+
+      xl: "1300px",
+
+      "2xl": "1400px",
+
+      "3xl": "1500px",
+
+      "4xl": "1600px",
+
+      "5xl": "1700px",
+
+      "6xl": "1800px",
+
+      "7xl": "1900px",
+
+      "8xl": "2000px",
+    },
     extend: {
       fontFamily: {
         spartan: ['"League Spartan"', 'sans-serif'],
