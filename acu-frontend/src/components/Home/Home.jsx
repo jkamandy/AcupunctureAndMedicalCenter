@@ -44,6 +44,7 @@ const Home = () => {
   return (
     <div className='relative z-0 w-full h-screen'>
         {/* <img className={`h-auto w-screen opacity-30 self-center fixed ${isVisible ? "backdrop-blur-sm" : "blur-lg"} transition duration-500 ease-in-out`} src={AMCbg}></img> */}
+        {/* TODO: convert the video into its own component */}
         <video 
           className={` fixed top-1/2 left-1/2 opacity-90 backdrop-blur-sm transform -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full object-cover transition duration-500 ease-in-out ${isVisible ? "backdrop-blur-sm" : "blur-lg"}`}
           autoPlay 
@@ -60,8 +61,10 @@ const Home = () => {
                 <Navbar/>
             </div>
             {/* <Navbar/> */}
+       
         <div className='h-screen text-[#D6D6D6] flex flex-col justify-center items-center'>
-            <div className='relative'> <span className='text-[80px] font-medium font-spartan tracking-[-2px] flex gap-12 '>Compassion with us is a <img className='absolute right-[205px] top-1' src={AMCLogo}></img>radition</span></div>
+            <div className='absolute top-24'><span className='text-[#D6D6D6] font-spartan font-light drop-shadow-md'>Rancho Santa Margarita  •  (949)-206-1040</span>   </div>
+            <div className='relative'> <span className='text-[80px] font-medium font-spartan tracking-[-2px] flex gap-12 drop-shadow-md'>Compassion with us is a <img className='absolute right-[205px] top-1' src={AMCLogo}></img>radition</span></div>
             <div className='absolute bottom-12 text-[32px]'>
               <IoChevronDownSharp onClick={scrollDown} className={`hover:cursor-pointer animate-pulse-down hover:text-[#92BF7C]  transition-opacity duration-500  ${isVisible ? "opacity-100" : "opacity-0 pointer-events-none"}`} />
             </div>
