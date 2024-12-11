@@ -12,6 +12,7 @@ import Footer from '../Footer/Footer';
 import Testimonals from '../Testimonals/Testimonials';
 import About from '../About/About';
 import Button from '../../shared/components/Button/Button';
+import CardStack from './CardStack/CardStack';
 
 
 
@@ -85,12 +86,26 @@ const Home = () => {
               </div>
             </div>
             
-            <div className='absolute bottom-12 text-[32px]'>
-              <IoChevronDownSharp onClick={scrollDown} className={`hover:cursor-pointer animate-pulse-down hover:text-[#92BF7C]  transition-opacity duration-500  ${isVisible ? "opacity-100" : "opacity-0 pointer-events-none"}`} />
+            <div onClick={scrollDown} className='flex items-center justify-center absolute bottom-8 text-[32px] h-[50px] w-[50px] hover:cursor-pointer group'>
+              <IoChevronDownSharp className={` animate-pulse-down group-hover:text-[#92BF7C]  transition-opacity duration-500  ${isVisible ? "opacity-100" : "opacity-0 pointer-events-none"}`} />
             </div>
         </div>
 
-        <div className=' h-screen text-[#D6D6D6] flex justify-center items-center'><About/> </div>
+        <div className='h-screen text-[#D6D6D6] flex flex-col justify-start'>
+          <div className='relative w-[1090px] mt-[150px] ml-[50px]'>
+              <span className='font-spartan text-[36px] text-[#D6D6D6] font-light leading-[36px]'>Our mission is to provide <span className='font-semibold text-[#92BF7C]'>personalized</span>, <span className='font-semibold text-[#92BF7C]'>high-quality</span> care on an as-needed or preventative basis. We have created a practice that we believe in and choose for our own family members. </span>
+          </div>
+          <div >
+            <CardStack cardsInfoFirst={{"Health Insurance":"", 
+                                      "Our Services":"" ,
+                                      "Testimonials":"",
+                                      "Meet the Doctor":"",
+                                      }}
+                         />
+          </div>
+          
+          {/* <About/>  */}
+        </div>
 
         <div className='h-screen text-[#D6D6D6] flex justify-center items-center'>
             <ServiceCards cardsInfoFirst={{"Acupuncture":"A traditional Chinese therapy that uses thin needles to stimulate specific points on the body, promoting healing and balance. It’s often used for pain relief, stress reduction, and overall well-being.", 
