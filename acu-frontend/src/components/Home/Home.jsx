@@ -13,6 +13,7 @@ import Testimonals from '../Testimonals/Testimonials';
 import About from '../About/About';
 import Button from '../../shared/components/Button/Button';
 import CardStack from './CardStack/CardStack';
+import InfoBanner from '../InfoBanner/InfoBanner';
 
 
 
@@ -48,7 +49,7 @@ const Home = () => {
   };
 
   return (
-    <div className='relative z-0 w-full h-screen'>
+    <div className='relative z-0 w-full h-auto'>
         {/* <img className={`h-auto w-screen opacity-30 self-center fixed ${isVisible ? "backdrop-blur-sm" : "blur-lg"} transition duration-500 ease-in-out`} src={AMCbg}></img> */}
         {/* TODO: convert the video into its own component */}
         <video 
@@ -69,19 +70,19 @@ const Home = () => {
             {/* <Navbar/> */}
        
         <div className='h-screen text-[#D6D6D6] flex flex-col justify-center items-center'>
-            <div className='absolute top-24'><span className='text-[#D6D6D6] font-spartan font-light drop-shadow-md'>Rancho Santa Margarita  •  (949)-206-1040</span>   </div>
+            <div className='absolute top-24'><span className='text-[#D6D6D6] 4xl:text-[18px] font-spartan font-light drop-shadow-md'>Rancho Santa Margarita  •  (949)-206-1040</span>   </div>
             <div className='flex flex-col absolute left-20 [&_h1]:leading-[90px] w-[800px] h-auto'>
               <div className='relative mt-10'> <h1 className='text-[85px] font-medium font-spartan tracking-[-3px] flex gap-12 drop-shadow-md'>Compassion with us</h1></div>
               <div className='relative'><h1 className='relative text-[85px] font-medium font-spartan tracking-[-3px] flex gap-12 drop-shadow-md'>is a <img className='absolute left-[92px] bottom-0 scale-90' src={AMCLogo}></img>radition</h1></div>
 
-              <div className='relative mt-5'><span className='text-[18px] font-spartan leading-[18px] font-light pt-10'>All new patients receive a <span className='font-semibold'>complementary</span> half-hour consult with our head physician to establish a personalized care plan. Schedule your free consultation now!</span></div>
+              <div className='relative mt-5'><span className='text-[18px] 4xl:text-[20px] font-spartan leading-[18px] font-light pt-10'>All new patients receive a <span className='font-semibold'>complementary</span> half-hour consult with our head physician to establish a personalized care plan. Schedule your free consultation now!</span></div>
               <div className='flex'>
                 <Button
                   label="Schedule an Appointment" 
                   onClick={handleClick}
                   bordered={true} //
                   // className="border-[1px] border-black p-1 m-1" 
-                  className="mx-0 mt-5"
+                  className="mx-0 mt-5 4xl:text-[20px]"
                 />
               </div>
             </div>
@@ -91,7 +92,7 @@ const Home = () => {
             </div>
         </div>
 
-        <div className='h-screen text-[#D6D6D6] flex flex-col justify-start'>
+        <div className=' text-[#D6D6D6] flex flex-col justify-start'>
           <div className='relative w-[1090px] mt-[150px] ml-[50px]'>
               <span className='font-spartan text-[36px] text-[#D6D6D6] font-light leading-[36px]'>Our mission is to provide <span className='font-semibold text-[#92BF7C]'>personalized</span>, <span className='font-semibold text-[#92BF7C]'>high-quality</span> care on an as-needed or preventative basis. We have created a practice that we believe in and choose for our own family members. </span>
           </div>
@@ -105,9 +106,14 @@ const Home = () => {
           </div>
           
           {/* <About/>  */}
+          <div className='flex my-[200px]'>
+            <InfoBanner title={"Try Out StemWave!"}/>
+          </div>
         </div>
 
-        <div className='h-screen text-[#D6D6D6] flex justify-center items-center'>
+        {/* <div className='text-[#D6D6D6] flex justify-center items-center'>
+            
+
             <ServiceCards cardsInfoFirst={{"Acupuncture":"A traditional Chinese therapy that uses thin needles to stimulate specific points on the body, promoting healing and balance. It’s often used for pain relief, stress reduction, and overall well-being.", 
                                       "Electro-Acupuncture":"A modern variation of traditional acupuncture where small electrical currents are applied to the needles, enhancing stimulation at specific points. It's often used to treat pain, nerve issues, and muscle conditions." ,
                                       "Massage":"Manipulating the body's soft tissues to relieve tension, reduce pain, and promote relaxation. It improves circulation, supports healing, and enhances overall well-being.",
@@ -119,9 +125,9 @@ const Home = () => {
                                       "Herbal Supplements":"Products made from plant extracts or herbs that are used to support health and wellness. Commonly used to address specific conditions, boost immunity, or improve overall vitality, often as an alternative or complement to conventional medicine."}}
                           
             />
-        </div>
+        </div> */}
 
-        <div className=' h-screen text-[#D6D6D6] flex justify-center items-center'><Testimonals/> </div>
+        {/* <div className=' text-[#D6D6D6] flex justify-center items-center'><Testimonals/> </div> */}
 
         <div>
           <Footer/>

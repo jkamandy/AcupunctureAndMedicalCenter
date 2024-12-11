@@ -41,6 +41,10 @@ export default {
       "8xl": "2000px",
     },
     extend: {
+      backgroundImage: {
+        'multi-gradient': `linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                          linear-gradient(90deg, rgba(0, 0, 0, 0.2) 40.5%, rgba(255, 255, 255, 0.2) 77%)`,
+      },
       fontFamily: {
         spartan: ['"League Spartan"', 'sans-serif'],
       },
