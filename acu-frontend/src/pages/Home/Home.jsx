@@ -1,20 +1,17 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 // import Button from '../../shared/components/Button/Button';
-import Navbar from '../Navbar/Navbar';
+import Navbar from '../../components/Navbar/Navbar';
 import AMCLogo from '../../assets/acu-logo.svg'
 import AMCbg from '../../assets/acu-bg-sample.svg'
 import AMCbgVideo from '../../assets/videos/bg-video.mp4'
-import ServiceCards from '../../components/ServiceCards/ServiceCards';
-
 import { IoChevronDownSharp } from "react-icons/io5";
-import Footer from '../Footer/Footer';
-import Testimonals from '../Testimonals/Testimonials';
-import About from '../About/About';
+import Footer from '../../components/Footer/Footer';
 import Button from '../../shared/components/Button/Button';
-import CardStack from './CardStack/CardStack';
-import InfoBanner from '../InfoBanner/InfoBanner';
-import Contact from '../Contact/Contact';
+import CardStack from '../../components/Home/CardStack/CardStack';
+import InfoBanner from '../../components/InfoBanner/InfoBanner';
+import Contact from '../../components/Contact/Contact';
+
 
 
 

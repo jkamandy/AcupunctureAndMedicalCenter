@@ -1,17 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
-import Card from '../../../shared/components/Card/Card';
-
-import acu0 from '../../../assets/services/acu-0.svg'
-import acu1 from '../../../assets/services/acu-1.svg'
-import acu2 from '../../../assets/services/acu-2.svg'
-import acu3 from '../../../assets/services/acu-3.svg'
-import acu4 from '../../../assets/services/acu-4.svg'
-import acu5 from '../../../assets/services/acu-5.svg'
-import acu6 from '../../../assets/services/acu-6.svg'
-import acu7 from '../../../assets/services/acu-7.svg'
 import CardFrame from "../../../shared/components/CardFrame/CardFrame";
 
-const bgImages = [acu0, acu1, acu2, acu3, acu4, acu5, acu6, acu7];
 
 
 const CardStack = ({ cardsInfoFirst }) => {

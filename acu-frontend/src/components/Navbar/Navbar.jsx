@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '../../shared/components/Button/Button';
 import AMCBanner from '../../assets/acu-banner.svg'
+import { Link } from 'react-router-dom';
 
 import { FaPhone } from "react-icons/fa6";
 
@@ -15,7 +16,10 @@ const Navbar = () => {
     <div className='h-[80px] z-10 py-4 px-12 bg-[#F3F3F3] flex items-center justify-between drop-shadow-lg fixed w-full'>
       {/* <h1 className='text-[40px]'>Acupuncture Medical Center</h1> */}
       <div className='w-1/5'>
+      <Link to='/'>
         <img className='h-[50px] w-auto' src={AMCBanner}></img>
+      </Link>
+        
       </div>
       <div className='flex items-center '>
         <Button
