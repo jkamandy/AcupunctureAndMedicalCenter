@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className='h-[80px] z-10 py-4 px-12 bg-[#F3F3F3] flex items-center justify-between drop-shadow-lg fixed w-full'>
+    <div className='h-[80px] z-20 py-4 px-12 bg-[#F3F3F3] flex items-center justify-between drop-shadow-lg fixed w-full'>
       {/* <h1 className='text-[40px]'>Acupuncture Medical Center</h1> */}
       <div className='w-1/5'>
       <Link to='/'>
@@ -34,18 +34,22 @@ const Navbar = () => {
           onClick={handleClick} 
           // className="border-[1px] border-black p-1 m-1" 
         />
+        <Link to='/Testmonials'>
         <Button
           className="mx-2"
           label="Testimonials" 
           onClick={handleClick} 
           // className="border-[1px] border-black p-1 m-1" 
         />
-        <Button
-          className="mx-2"
-          label="FAQ" 
-          onClick={handleClick} 
-          // className="border-[1px] border-black p-1 m-1" 
-        />
+        </Link>
+        <Link to='/FAQ'>
+          <Button
+            className="mx-2"
+            label="FAQ" 
+            onClick={handleClick} 
+            // className="border-[1px] border-black p-1 m-1" 
+          />
+        </Link>
         <Button
           className="mx-2"
           label="Contact" 

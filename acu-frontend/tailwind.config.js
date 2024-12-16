@@ -53,9 +53,19 @@ export default {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(10px)" },
         },
+        'slide-down': {
+            from: { height: '0' },
+            to: { height: 'var(--radix-accordion-content-height)' },
+        },
+        'slide-up': {
+            from: { height: 'var(--radix-accordion-content-height)' },
+            to: { height: '0' },
+        },
       },
       animation: {
         "pulse-down": "pulse-down 1.5s infinite ease-in-out",
+        'slide-down': 'slide-down 300ms ease-out',
+        'slide-up': 'slide-up 300ms ease-out',
       },
       rotate: {
         "y-180": "rotateY(180deg)",

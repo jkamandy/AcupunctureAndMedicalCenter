@@ -10,7 +10,7 @@ import PropTypes from 'prop-types';
  * @param {string} className - Additional CSS classes for styling.
  * @param {boolean} disabled - Whether the button is disabled.
  */
-const Button = ({ url, label, type = 'button', onClick, className = '', disabled = false,  bordered}) => {
+const Button = ({ url, label, type = 'button', onClick, className = '', disabled = false,  bordered, standard}) => {
   return (
     <div >
       <button

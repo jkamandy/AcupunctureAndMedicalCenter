@@ -4,6 +4,7 @@ import { useState } from 'react';
 import fb from '../../assets/icons/Facebook.svg'
 import yp from '../../assets/icons/Yelp.svg'
 import ins from '../../assets/icons/Instagram.svg'
+import ml from '../../assets/icons/Mail.svg'
 import Button from '../../shared/components/Button/Button';
 
 
@@ -21,6 +22,7 @@ const Contact = ({ title, body, images }) => {
                     <img src={ins}></img>
                     <img src={yp}></img>
                     <img src={fb}></img>
+                    <img src={ml}></img>
                 </div>
                 <flex className="flex items-center justify-center">
                     <Button bordered label='Schedule An Appointment' className='mt-8 font-spartan text-[18px] bg-[#868686] bg-opacity-50 hover:bg-[#434343] font-light'></Button>
@@ -53,7 +55,7 @@ const Contact = ({ title, body, images }) => {
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.8266157458177!2d-117.59833838479707!3d33.64236188071774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcda8b99aa1bd5%3A0x72593a3c2f1b18e6!2s30212%20Tomas%2C%20Rancho%20Santa%20Margarita%2C%20CA%2092688!5e0!3m2!1sen!2sus!4v1702394653443"
                 width="500"
                 height="350"
-                // className='rounded-lg'
+                className='shadow-lg'
                 // style="border:0;"
                 allowFullScreen=""
                 loading="lazy"
