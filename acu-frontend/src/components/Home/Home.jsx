@@ -2,12 +2,12 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 // import Button from '../../shared/components/Button/Button';
 import Navbar from '../Navbar/Navbar';
-import AMCLogo from '../../assets/acu-logo.svg'
-import AMCbg from '../../assets/acu-bg-sample.svg'
-import AMCbgVideo from '../../assets/videos/bg-video.mp4'
+import AMCLogo from '../../assets/acu-logo.svg';
+import AMCbg from '../../assets/acu-bg-sample.svg';
+import AMCbgVideo from '../../assets/videos/bg-video.mp4';
 import ServiceCards from '../../components/ServiceCards/ServiceCards';
 
-import { IoChevronDownSharp } from "react-icons/io5";
+import { IoChevronDownSharp } from 'react-icons/io5';
 import Footer from '../Footer/Footer';
 import Testimonals from '../Testimonals/Testimonials';
 import About from '../About/About';
@@ -15,8 +15,6 @@ import Button from '../../shared/components/Button/Button';
 import CardStack from './CardStack/CardStack';
 import InfoBanner from '../InfoBanner/InfoBanner';
 import Contact from '../Contact/Contact';
-
-
 
 /*
     Notes:
@@ -26,22 +24,22 @@ import Contact from '../Contact/Contact';
 
 const Home = () => {
   const [isVisible, setIsVisible] = useState(true);
-//   const handleClick = () => {
-//     alert('Button clicked!');
-//   };
+  //   const handleClick = () => {
+  //     alert('Button clicked!');
+  //   };
   useEffect(() => {
     const handleScroll = () => {
       setIsVisible(window.scrollY < 100); // Show chevron when near the top
     };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const scrollDown = () => {
     window.scrollBy({
       top: window.innerHeight, // Scroll down by the height of the viewport (100vh)
-      behavior: "smooth", // Smooth scrolling
+      behavior: 'smooth', // Smooth scrolling
     });
   };
 
@@ -50,83 +48,130 @@ const Home = () => {
   };
 
   return (
-    <div className='relative z-0 w-full h-auto'>
-        {/* <img className={`h-auto w-screen opacity-30 self-center fixed ${isVisible ? "backdrop-blur-sm" : "blur-lg"} transition duration-500 ease-in-out`} src={AMCbg}></img> */}
-        {/* TODO: convert the video into its own component */}
-        <video 
-          className={` fixed top-1/2 left-1/2 opacity-90 backdrop-blur-sm transform -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full object-cover transition duration-500 ease-in-out ${isVisible ? "backdrop-blur-sm" : "blur-lg"}`}
-          autoPlay 
-          muted 
-          loop 
-          playsInline
-        >
-          <source src={AMCbgVideo} type="video/mp4" />
-          {/* If the video is not supported on certain browsers, the bgImage below will substitute it */}
-          <img className={`h-auto w-screen opacity-30 self-center fixed ${isVisible ? "backdrop-blur-sm" : "blur-lg"} transition duration-500 ease-in-out`} src={AMCbg}></img>
-        </video>
-        <div className='h-screen w-screen'>
-            <div > 
-                <Navbar/>
-            </div>
-            {/* <Navbar/> */}
-       
-        <div className='h-screen text-[#D6D6D6] flex flex-col justify-center items-center'>
-            <div className='absolute top-24'><span className='text-[#D6D6D6] 4xl:text-[18px] font-spartan font-light drop-shadow-md'>Rancho Santa Margarita  •  (949)-206-1040</span>   </div>
-            <div className='flex flex-col absolute left-20 [&_h1]:leading-[90px] w-[800px] h-auto'>
-              <div className='relative mt-10'> <h1 className='text-[85px] font-medium font-spartan tracking-[-3px] flex gap-12 drop-shadow-md'>Compassion with us</h1></div>
-              <div className='relative'><h1 className='relative text-[85px] font-medium font-spartan tracking-[-3px] flex gap-12 drop-shadow-md'>is a <img className='absolute left-[92px] bottom-0 scale-90' src={AMCLogo}></img>radition</h1></div>
+    <div className="relative z-0 h-auto w-full">
+      {/* <img className={`h-auto w-screen opacity-30 self-center fixed ${isVisible ? "backdrop-blur-sm" : "blur-lg"} transition duration-500 ease-in-out`} src={AMCbg}></img> */}
+      {/* TODO: convert the video into its own component */}
+      <video
+        className={`fixed left-1/2 top-1/2 min-h-full min-w-full -translate-x-1/2 -translate-y-1/2 transform object-cover opacity-90 backdrop-blur-sm transition duration-500 ease-in-out ${isVisible ? 'backdrop-blur-sm' : 'blur-lg'}`}
+        autoPlay
+        muted
+        loop
+        playsInline
+      >
+        <source src={AMCbgVideo} type="video/mp4" />
+        {/* If the video is not supported on certain browsers, the bgImage below will substitute it */}
+        <img
+          className={`fixed h-auto w-screen self-center opacity-30 ${isVisible ? 'backdrop-blur-sm' : 'blur-lg'} transition duration-500 ease-in-out`}
+          src={AMCbg}
+        ></img>
+      </video>
+      <div className="h-screen w-screen">
+        <div>
+          <Navbar />
+        </div>
+        {/* <Navbar/> */}
 
-              <div className='relative mt-5'><span className='text-[18px] 4xl:text-[20px] font-spartan leading-[18px] font-light pt-10'>All new patients receive a <span className='font-semibold'>complementary</span> half-hour consult with our head physician to establish a personalized care plan. Schedule your free consultation now!</span></div>
-              <div className='flex'>
-                <Button
-                  label="Schedule an Appointment" 
-                  onClick={handleClick}
-                  bordered={true} //
-                  // className="border-[1px] border-black p-1 m-1" 
-                  className="mx-0 mt-5 4xl:text-[20px]"
-                />
-              </div>
+        <div className="flex h-screen flex-col items-center justify-center text-[#D6D6D6]">
+          <div className="absolute top-24">
+            <span className="font-spartan font-light text-[#D6D6D6] drop-shadow-md 4xl:text-[18px]">
+              Rancho Santa Margarita • (949)-206-1040
+            </span>{' '}
+          </div>
+          <div className="absolute left-20 flex h-auto w-[800px] flex-col [&_h1]:leading-[90px]">
+            <div className="relative mt-10">
+              {' '}
+              <h1 className="flex gap-12 font-spartan text-[85px] font-medium tracking-[-3px] drop-shadow-md">
+                Compassion with us
+              </h1>
             </div>
-            
-            <div onClick={scrollDown} className='flex items-center justify-center absolute bottom-8 text-[32px] h-[50px] w-[50px] hover:cursor-pointer group'>
-              <IoChevronDownSharp className={` animate-pulse-down group-hover:text-[#92BF7C]  transition-opacity duration-500  ${isVisible ? "opacity-100" : "opacity-0 pointer-events-none"}`} />
+            <div className="relative">
+              <h1 className="relative flex gap-12 font-spartan text-[85px] font-medium tracking-[-3px] drop-shadow-md">
+                is a{' '}
+                <img
+                  className="absolute bottom-0 left-[92px] scale-90"
+                  src={AMCLogo}
+                ></img>
+                radition
+              </h1>
             </div>
+
+            <div className="relative mt-5">
+              <span className="pt-10 font-spartan text-[18px] font-light leading-[18px] 4xl:text-[20px]">
+                All new patients receive a{' '}
+                <span className="font-semibold">complementary</span> half-hour
+                consult with our head physician to establish a personalized care
+                plan. Schedule your free consultation now!
+              </span>
+            </div>
+            <div className="flex">
+              <Button
+                label="Schedule an Appointment"
+                onClick={handleClick}
+                bordered={true} //
+                // className="border-[1px] border-black p-1 m-1"
+                className="mx-0 mt-5 4xl:text-[20px]"
+              />
+            </div>
+          </div>
+
+          <div
+            onClick={scrollDown}
+            className="group absolute bottom-8 flex h-[50px] w-[50px] items-center justify-center text-[32px] hover:cursor-pointer"
+          >
+            <IoChevronDownSharp
+              className={`animate-pulse-down transition-opacity duration-500 group-hover:text-[#92BF7C] ${isVisible ? 'opacity-100' : 'pointer-events-none opacity-0'}`}
+            />
+          </div>
         </div>
 
-        <div className=' text-[#D6D6D6] flex flex-col justify-start'>
+        <div className="flex flex-col justify-start text-[#D6D6D6]">
           {/* ---- Mission Statement + Nav Cards ---- */}
-          <div className='relative w-[1090px] mt-[150px] ml-[50px]'>
-              <span className='font-spartan text-[36px] text-[#D6D6D6] font-light leading-[36px]'>Our mission is to provide <span className='font-semibold text-[#92BF7C]'>personalized</span>, <span className='font-semibold text-[#92BF7C]'>high-quality</span> care on an as-needed or preventative basis. We have created a practice that we believe in and choose for our own family members. </span>
+          <div className="relative ml-[50px] mt-[150px] w-[1090px]">
+            <span className="font-spartan text-[36px] font-light leading-[36px] text-[#D6D6D6]">
+              Our mission is to provide{' '}
+              <span className="font-semibold text-[#92BF7C]">personalized</span>
+              ,{' '}
+              <span className="font-semibold text-[#92BF7C]">high-quality</span>{' '}
+              care on an as-needed or preventative basis. We have created a
+              practice that we believe in and choose for our own family members.{' '}
+            </span>
           </div>
-          <div >
-            <CardStack cardsInfoFirst={{"Health Insurance":"", 
-                                      "Our Services":"" ,
-                                      "Testimonials":"",
-                                      "Meet the Team":"",
-                                      }}
-                         />
-          </div>
-          
-          {/* ---- StemWave Banner ---- */}
-          {/* <About/>  */}
-          <div className='flex my-[200px]'>
-            <InfoBanner title={"Try Out StemWave!"}/>
+          <div>
+            <CardStack
+              cardsInfoFirst={{
+                'Health Insurance': '',
+                'Our Services': '',
+                Testimonials: '',
+                'Meet the Team': '',
+              }}
+            />
           </div>
 
-          <div className='flex justify-end text-end mr-[50px]'>
-            <div className='relative w-[1090px] ml-[50px]'>
-              <span className='font-spartan text-[36px] text-[#D6D6D6] font-light leading-[36px]'><span className='font-semibold text-[#92BF7C]'>We're here to help!</span> Whether you have questions about our services, need assistance with appointments, or want more information, feel free to reach out. Visit us, call, or send us a message, and our friendly team will be happy to assist you. </span>
+          {/* ---- StemWave Banner ---- */}
+          {/* <About/>  */}
+          <div className="my-[200px] flex">
+            <InfoBanner title={'Try Out StemWave!'} />
+          </div>
+
+          <div className="mr-[50px] flex justify-end text-end">
+            <div className="relative ml-[50px] w-[1090px]">
+              <span className="font-spartan text-[36px] font-light leading-[36px] text-[#D6D6D6]">
+                <span className="font-semibold text-[#92BF7C]">
+                  We're here to help!
+                </span>{' '}
+                Whether you have questions about our services, need assistance
+                with appointments, or want more information, feel free to reach
+                out. Visit us, call, or send us a message, and our friendly team
+                will be happy to assist you.{' '}
+              </span>
             </div>
           </div>
 
           {/* ---- Contact ---- */}
-          <div className='flex items-center justify-center my-[200px]'>
-            <Contact/>
+          <div className="my-[200px] flex items-center justify-center">
+            <Contact />
           </div>
-
         </div>
-
-        
 
         {/* <div className='text-[#D6D6D6] flex justify-center items-center'>
             
@@ -147,9 +192,8 @@ const Home = () => {
         {/* <div className=' text-[#D6D6D6] flex justify-center items-center'><Testimonals/> </div> */}
 
         <div>
-          <Footer/>
+          <Footer />
         </div>
-
       </div>
     </div>
   );

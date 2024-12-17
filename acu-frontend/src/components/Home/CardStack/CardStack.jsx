@@ -1,7 +1,5 @@
-import React, { useState, useEffect, useRef } from "react";
-import CardFrame from "../../../shared/components/CardFrame/CardFrame";
-
-
+import React, { useState, useEffect, useRef } from 'react';
+import CardFrame from '../../../shared/components/CardFrame/CardFrame';
 
 const CardStack = ({ cardsInfoFirst }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -14,7 +12,7 @@ const CardStack = ({ cardsInfoFirst }) => {
           setIsVisible(true);
         }
       },
-      { threshold: 0.05 } // Animation triggers when 10% of the element is visible
+      { threshold: 0.05 }, // Animation triggers when 10% of the element is visible
     );
 
     if (ref.current) {
@@ -29,26 +27,27 @@ const CardStack = ({ cardsInfoFirst }) => {
   }, []);
 
   return (
-    <div ref={ref} className={`flex flex-col gap-y-6 justify-center items-center mt-12 transition-all duration-1000 ${
-      isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-    }`}>
+    <div
+      ref={ref}
+      className={`mt-12 flex flex-col items-center justify-center gap-y-6 transition-all duration-1000 ${
+        isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+      }`}
+    >
       {/* <div className='flex justify-center w-screen mt-5'>
         <h1 className='text-white left-5 top-4 z-[-1] text-[152px] opacity-70 font-spartan font-medium text-start leading-[2px] uppercase tracking-[-10px]'>Our Services</h1>
       </div> */}
 
       {/* TODO: Create general card vs FlipCard */}
-      
-        <div className='flex gap-6 z-[5] pt-14 items-center justify-center'>
+
+      <div className="z-[5] flex items-center justify-center gap-6 pt-14">
         {Object.entries(cardsInfoFirst).map(([title, description], index) => (
-            <div className="w-[20%]"><CardFrame title={title} /></div>
+          <div className="w-[20%]">
+            <CardFrame title={title} />
+          </div>
         ))}
-        </div>
-        
-    
-      
+      </div>
     </div>
   );
 };
-
 
 export default CardStack;
