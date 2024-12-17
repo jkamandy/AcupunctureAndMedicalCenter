@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 import Home from './pages/Home/Home';
 import FAQ from './pages/FAQ/FAQ';
+import About from './pages/About/About';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/FAQ" element={<FAQ />} />
+        <Route path="/About" element={<About />} />
 
         <Route path="*" element={<div>404 Page Not Found</div>} />
         
