@@ -29,7 +29,7 @@ const CardStack = ({ cardsInfoFirst }) => {
   return (
     <div
       ref={ref}
-      className={`mt-12 flex flex-col items-center justify-center gap-y-6 transition-all duration-1000 ${
+      className={`flex flex-col items-center justify-center gap-y-6 transition-all duration-1000 ${
         isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
       }`}
     >
@@ -39,10 +39,10 @@ const CardStack = ({ cardsInfoFirst }) => {
 
       {/* TODO: Create general card vs FlipCard */}
 
-      <div className="z-[5] flex items-center justify-center gap-6 pt-14">
+      <div className="z-[5] flex items-center justify-start gap-6 pt-14">
         {Object.entries(cardsInfoFirst).map(([title, description], index) => (
-          <div className="w-[20%]">
-            <CardFrame title={title} />
+          <div className="w-[280px]">
+            <CardFrame title={title} description={description} />
           </div>
         ))}
       </div>

@@ -36,6 +36,9 @@ const Contact = ({ title, body, images }) => {
               ></Button>
             </flex>
             <div className="mt-8 flex flex-col items-center justify-center">
+              <span className="text-center font-spartan font-medium underline">
+                Hours:
+              </span>
               <span className="text-center font-spartan font-light">
                 Monday - Friday: 8:00 - 6:00 pm
               </span>

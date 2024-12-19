@@ -1,5 +1,5 @@
 import React from 'react';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 // import Button from '../../shared/components/Button/Button';
 import Navbar from '../../components/Navbar/Navbar';
 import AMCLogo from '../../assets/acu-logo.svg';
@@ -20,6 +20,34 @@ import Contact from '../../components/Contact/Contact';
 
 const Home = () => {
   const [isVisible, setIsVisible] = useState(true);
+  const [isPageVisible, setIsPageVisible] = useState(false);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsPageVisible(true);
+        }
+      },
+      { threshold: 0.05 }, // Animation triggers when 10% of the element is visible
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, []);
+
   //   const handleClick = () => {
   //     alert('Button clicked!');
   //   };
@@ -67,7 +95,15 @@ const Home = () => {
         </div>
         {/* <Navbar/> */}
 
-        <div className="flex h-screen flex-col items-center justify-center text-[#D6D6D6]">
+        <div
+          //   className="flex h-screen flex-col items-center justify-center text-[#D6D6D6]"
+          ref={ref}
+          className={`flex h-screen flex-col items-center justify-center text-[#D6D6D6] transition-all duration-1000 ${
+            isPageVisible
+              ? 'translate-y-0 opacity-100'
+              : 'translate-y-10 opacity-0'
+          }`}
+        >
           <div className="absolute top-24">
             <span className="font-spartan font-light text-[#D6D6D6] drop-shadow-md 4xl:text-[18px]">
               Rancho Santa Margarita • (949)-206-1040
@@ -123,7 +159,7 @@ const Home = () => {
         <div className="flex flex-col justify-start text-[#D6D6D6]">
           {/* ---- Mission Statement + Nav Cards ---- */}
           <div className="relative ml-[50px] mt-[150px] w-[1090px]">
-            <span className="font-spartan text-[36px] font-light leading-[36px] text-[#D6D6D6]">
+            <span className="font-spartan text-[30px] font-light leading-[36px] text-[#D6D6D6]">
               Our mission is to provide{' '}
               <span className="font-semibold text-[#92BF7C]">personalized</span>
               ,{' '}
@@ -132,7 +168,7 @@ const Home = () => {
               practice that we believe in and choose for our own family members.{' '}
             </span>
           </div>
-          <div>
+          <div className="mt-12">
             <CardStack
               cardsInfoFirst={{
                 'Health Insurance': '',
@@ -151,7 +187,7 @@ const Home = () => {
 
           <div className="mr-[50px] flex justify-end text-end">
             <div className="relative ml-[50px] w-[1090px]">
-              <span className="font-spartan text-[36px] font-light leading-[36px] text-[#D6D6D6]">
+              <span className="font-spartan text-[30px] font-light leading-[36px] text-[#D6D6D6]">
                 <span className="font-semibold text-[#92BF7C]">
                   We're here to help!
                 </span>{' '}

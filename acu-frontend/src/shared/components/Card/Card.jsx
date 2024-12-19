@@ -14,7 +14,7 @@ const Card = ({ title, desc, bgImage }) => {
       {/* front */}
       <div
         style={{ backgroundImage: `url(${bgImage})` }}
-        className={`h-[220px] w-[270px] rounded-[20px] border-[1px] border-opacity-5 bg-black bg-opacity-40 bg-cover hover:cursor-pointer hover:bg-opacity-50 hover:[transition:color_0.3s_ease-in-out;]`}
+        className={`h-[360px] w-[280px] rounded-[20px] border-[1px] border-opacity-5 bg-black bg-opacity-40 bg-cover hover:cursor-pointer hover:bg-opacity-50 hover:[transition:color_0.3s_ease-in-out;]`}
         onClick={handleFlip}
       >
         <div className="p-5">
@@ -26,7 +26,7 @@ const Card = ({ title, desc, bgImage }) => {
 
       {/* back */}
       <div
-        className={`h-[220px] w-[270px] rounded-[20px] bg-black bg-opacity-70 hover:cursor-pointer hover:bg-opacity-50 hover:[transition:color_0.3s_ease-in-out;]`}
+        className={`h-[360px] w-[280px] rounded-[20px] bg-black bg-opacity-70 hover:cursor-pointer hover:bg-opacity-50 hover:[transition:color_0.3s_ease-in-out;]`}
         onClick={handleFlip}
       >
         <div className="px-5 py-2">

@@ -25,12 +25,14 @@ const Navbar = () => {
           onClick={handleClick}
           // className="border-[1px] border-black p-1 m-1"
         />
-        <Button
-          className="mx-2"
-          label="Services"
-          onClick={handleClick}
-          // className="border-[1px] border-black p-1 m-1"
-        />
+        <Link to="/OurServices">
+          <Button
+            className="mx-2"
+            label="Services"
+            onClick={handleClick}
+            // className="border-[1px] border-black p-1 m-1"
+          />
+        </Link>
         <Link to="/Testmonials">
           <Button className="mx-2" label="Testimonials" onClick={handleClick} />
         </Link>
