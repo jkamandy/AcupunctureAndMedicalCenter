@@ -69,15 +69,7 @@ const FAQ = () => {
             <AppAccordion />
           </div>
           <div className="mb-[100px] mt-6 flex items-center">
-            <span
-              className="z-10 self-start font-spartan italic text-[#D6D6D6]"
-              //   ref={ref}
-              //   className={`z-10 self-start font-spartan italic text-[#D6D6D6] transition-all duration-1000 ${
-              //     isVisible
-              //       ? 'translate-y-0 opacity-100'
-              //       : 'translate-y-10 opacity-0'
-              //   }`}
-            >
+            <span className="z-10 self-start font-spartan text-[20px] font-light text-[#D6D6D6]">
               Have other questions? Be sure to give us a call so we can help
               give you the right information!
             </span>

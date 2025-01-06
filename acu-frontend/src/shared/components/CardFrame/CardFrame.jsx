@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import ReactCardFlip from 'react-card-flip';
 
-const CardFrame = ({ title, description }) => {
+const CardFrame = ({ title, description, bgImage }) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleFlip = () => {
@@ -12,7 +12,10 @@ const CardFrame = ({ title, description }) => {
   return (
     <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
       <div
-        className={`relative flex h-[360px] items-center justify-center bg-black bg-opacity-40 hover:cursor-pointer hover:bg-opacity-50 hover:[transition:color_0.3s_ease-in-out;]`}
+        style={{
+          backgroundImage: `${bgImage ? `url(${bgImage})` : `none`}`,
+        }}
+        className={`relative flex h-[360px] items-center justify-center ${!bgImage && 'bg-black'} rounded-none bg-opacity-40 hover:cursor-pointer hover:bg-opacity-50 hover:[transition:color_0.3s_ease-in-out;]`}
         onClick={handleFlip}
       >
         <div className="p-5">

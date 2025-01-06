@@ -42,7 +42,11 @@ const CardStack = ({ cardsInfoFirst }) => {
       <div className="z-[5] flex items-center justify-start gap-6 pt-14">
         {Object.entries(cardsInfoFirst).map(([title, description], index) => (
           <div className="w-[280px]">
-            <CardFrame title={title} description={description} />
+            <CardFrame
+              title={title}
+              description={description[0]}
+              bgImage={description[1]}
+            />
           </div>
         ))}
       </div>
