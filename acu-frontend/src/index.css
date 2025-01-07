@@ -4,7 +4,10 @@
 
 @layer base {
   body {
-    @apply bg-opacity-70 bg-black overflow-x-hidden;
+    @apply overflow-x-hidden bg-black bg-opacity-70;
+  }
+  html {
+    @apply scroll-smooth;
   }
 }
 
@@ -17,7 +20,6 @@ html {
 /* Custom scrollbar styles */
 ::-webkit-scrollbar {
   width: 2px; /* Width of the scrollbar */
-
 }
 
 ::-webkit-scrollbar-track {

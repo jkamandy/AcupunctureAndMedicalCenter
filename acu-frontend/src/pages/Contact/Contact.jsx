@@ -1,15 +1,9 @@
 import React from 'react';
 import { useEffect, useState, useRef } from 'react';
-// import Button from '../../shared/components/Button/Button';
 import Navbar from '../../components/Navbar/Navbar';
-import AMCLogo from '../../assets/acu-logo.svg';
 import AMCbg from '../../assets/acu-bg-sample.svg';
 import AMCbgVideo from '../../assets/videos/bg-video.mp4';
-import { IoChevronDownSharp } from 'react-icons/io5';
 import Footer from '../../components/Footer/Footer';
-import Button from '../../shared/components/Button/Button';
-import CardStack from '../../components/Home/CardStack/CardStack';
-import InfoBanner from '../../components/InfoBanner/InfoBanner';
 import Contact from '../../components/Contact/Contact';
 
 /*
@@ -18,7 +12,7 @@ import Contact from '../../components/Contact/Contact';
     - dash
 */
 
-const Home = () => {
+const ContactPage = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [isPageVisible, setIsPageVisible] = useState(false);
   const ref = useRef(null);
@@ -104,102 +98,6 @@ const Home = () => {
               : 'translate-y-10 opacity-0'
           }`}
         >
-          <div className="absolute top-24">
-            <span className="font-spartan font-light text-[#D6D6D6] drop-shadow-md 4xl:text-[18px]">
-              Rancho Santa Margarita • (949)-206-1040
-            </span>{' '}
-          </div>
-          <div className="absolute left-20 flex h-auto w-[800px] flex-col [&_h1]:leading-[90px]">
-            <div className="relative mt-10">
-              {' '}
-              <h1 className="flex gap-12 font-spartan text-[85px] font-medium tracking-[-3px] drop-shadow-md">
-                Compassion with us
-              </h1>
-            </div>
-            <div className="relative">
-              <h1 className="relative flex gap-12 font-spartan text-[85px] font-medium tracking-[-3px] drop-shadow-md">
-                is a{' '}
-                <img
-                  className="absolute bottom-0 left-[92px] scale-90"
-                  src={AMCLogo}
-                ></img>
-                radition
-              </h1>
-            </div>
-
-            <div className="relative mt-5">
-              <span className="pt-10 font-spartan text-[18px] font-light leading-[18px] 4xl:text-[20px]">
-                All new patients receive a{' '}
-                <span className="font-semibold">complementary</span> half-hour
-                consult with our head physician to establish a personalized care
-                plan. Schedule your free consultation now!
-              </span>
-            </div>
-            <div className="flex">
-              <Button
-                label="Schedule an Appointment"
-                onClick={handleClick}
-                bordered={true} //
-                // className="border-[1px] border-black p-1 m-1"
-                className="mx-0 mt-5 4xl:text-[20px]"
-              />
-            </div>
-          </div>
-
-          <div
-            onClick={scrollDown}
-            className="group absolute bottom-8 flex h-[50px] w-[50px] items-center justify-center text-[32px] hover:cursor-pointer"
-          >
-            <IoChevronDownSharp
-              className={`animate-pulse-down transition-opacity duration-500 group-hover:text-[#92BF7C] ${isVisible ? 'opacity-100' : 'pointer-events-none opacity-0'}`}
-            />
-          </div>
-        </div>
-
-        <div className="flex flex-col justify-start text-[#D6D6D6]">
-          {/* ---- Mission Statement + Nav Cards ---- */}
-          <div className="relative ml-[50px] mt-[150px] w-[1090px]">
-            <span className="font-spartan text-[30px] font-light leading-[36px] text-[#D6D6D6]">
-              Our mission is to provide{' '}
-              <span className="font-semibold text-[#92BF7C]">personalized</span>
-              ,{' '}
-              <span className="font-semibold text-[#92BF7C]">high-quality</span>{' '}
-              care on an as-needed or preventative basis. We have created a
-              practice that we believe in and choose for our own family members.{' '}
-            </span>
-          </div>
-          <div className="mt-12">
-            <CardStack
-              // repurposing empty descriptions to store path if the card is not flippable
-              cardsInfoFirst={{
-                'Health Insurance': ['/'],
-                'Our Services': ['/OurServices'],
-                Testimonials: ['/'],
-                'Meet the Team': ['/'],
-              }}
-            />
-          </div>
-
-          {/* ---- StemWave Banner ---- */}
-          {/* <About/>  */}
-          <div className="my-[200px] flex">
-            <InfoBanner title={'Try Out StemWave!'} />
-          </div>
-
-          <div className="mr-[50px] flex justify-end text-end">
-            <div className="relative ml-[50px] w-[1090px]">
-              <span className="font-spartan text-[30px] font-light leading-[36px] text-[#D6D6D6]">
-                <span className="font-semibold text-[#92BF7C]">
-                  We're here to help!
-                </span>{' '}
-                Whether you have questions about our services, need assistance
-                with appointments, or want more information, feel free to reach
-                out. Visit us, call, or send us a message, and our friendly team
-                will be happy to assist you.{' '}
-              </span>
-            </div>
-          </div>
-
           {/* ---- Contact ---- */}
           <div
             className="my-[200px] flex flex-col items-center justify-center"
@@ -245,4 +143,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default ContactPage;

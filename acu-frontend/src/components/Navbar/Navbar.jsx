@@ -10,6 +10,8 @@ const Navbar = () => {
     // alert('Button clicked!');
   };
 
+  const sendEmail = () => {};
+
   return (
     <div className="fixed z-20 flex h-[80px] w-full items-center justify-between bg-[#F3F3F3] px-12 py-4 drop-shadow-lg">
       {/* <h1 className='text-[40px]'>Acupuncture Medical Center</h1> */}
@@ -44,21 +46,27 @@ const Navbar = () => {
             // className="border-[1px] border-black p-1 m-1"
           />
         </Link>
-        <Button
-          className="mx-2"
-          label="Contact"
-          onClick={handleClick}
-          // bordered={true} //
-          // className="border-[1px] border-black p-1 m-1"
-        />
-        <div className="flex flex-col items-center justify-center">
+        <Link to="/Contact">
           <Button
             className="mx-2"
-            label="Schedule an Appointment"
+            label="Contact"
             onClick={handleClick}
-            bordered={true} //
+            // url="#Contact"
+            // bordered={true} //
             // className="border-[1px] border-black p-1 m-1"
           />
+        </Link>
+        <div className="flex flex-col items-center justify-center">
+          <Link to="mailto:test@gmail.com">
+            <Button
+              className="mx-2"
+              label="Schedule an Appointment"
+              onClick={handleClick}
+              bordered={true} //
+              // mailTo="test@gmail.com"
+              // className="border-[1px] border-black p-1 m-1"
+            />
+          </Link>
           {/* <div className='flex items-center justify-center hover:scale-105 hover:cursor-pointer group'>
             <FaPhone className='text-[14px] mr-2 group-hover:text-[#92BF7C]'/>
             <span className='font-spartan uppercase text-[12px] group-hover:text-[#92BF7C]'> (949)-206-1040 </span>

@@ -12,6 +12,7 @@ import PropTypes from 'prop-types';
  */
 const Button = ({
   url,
+  mailTo,
   label,
   type = 'button',
   onClick,
@@ -30,7 +31,7 @@ const Button = ({
         disabled={disabled}
       >
         <a
-          href={url}
+          // href={`${mailTo && `mailto:${mailTo}`}`}
           target="_blank"
           className={`${bordered ? 'font-light' : 'font-normal text-[#656565] group-hover:text-[#92BF7C] group-hover:underline group-hover:opacity-80 group-hover:[transition:color_0.3s_ease-in-out;]'} m-3 font-spartan text-[16px] tracking-[-0.1px] 4xl:text-[20px]`}
         >

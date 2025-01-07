@@ -9,6 +9,8 @@ import About from './pages/About/About';
 import OurServices from './pages/OurServices/OurServices';
 import Testimonals from './components/Testimonals/Testimonials';
 import Error from './pages/Error/Error';
+import ScrollToSection from './functions/ScrollToSection/ScrollToSection';
+import ContactPage from './pages/Contact/Contact';
 
 // import ScrollRestoration from 'react-router-dom';
 
@@ -16,11 +18,13 @@ function App() {
   return (
     <Router>
       {/* <ScrollRestoration /> */}
+      {/* <ScrollToSection /> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/FAQ" element={<FAQ />} />
         <Route path="/About" element={<About />} />
         <Route path="/OurServices" element={<OurServices />} />
+        <Route path="/Contact" element={<ContactPage />} />
 
         <Route path="*" element={<Error />} />
 
