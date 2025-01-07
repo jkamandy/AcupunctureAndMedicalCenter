@@ -24,18 +24,28 @@ const Contact = ({ title, body, images }) => {
             <span className="text-center font-spartan font-light">
               Tel: (949)-206-1040 • 30212 Tomas, Suite 180
             </span>
-            <div className="mt-6 flex w-full items-center justify-center [&_img:not(:first-of-type)]:ml-5">
-              <img src={ins}></img>
-              <img src={yp}></img>
-              <img src={fb}></img>
-              <img src={ml}></img>
+            <div className="mt-6 flex w-full items-center justify-center [&_a:not(:first-of-type)]:ml-5">
+              <a href="">
+                <img src={ins} className="hover:scale-105"></img>
+              </a>
+              <a>
+                <img src={yp} className="hover:scale-105"></img>
+              </a>
+              <a>
+                <img src={fb} className="hover:scale-105"></img>
+              </a>
+              <a href="mailto:test@gmail.com">
+                <img src={ml} className="hover:scale-105" href=""></img>
+              </a>
             </div>
             <div className="flex items-center justify-center">
-              <Button
-                bordered
-                label="Schedule An Appointment"
-                className="mt-8 bg-[#868686] bg-opacity-50 font-spartan text-[18px] font-light hover:bg-[#434343]"
-              ></Button>
+              <a href="mailto:test@gmail.com">
+                <Button
+                  bordered
+                  label="Schedule An Appointment"
+                  className="mt-8 bg-[#868686] bg-opacity-50 font-spartan text-[18px] font-light hover:bg-[#434343]"
+                ></Button>
+              </a>
             </div>
             <div className="mt-8 flex flex-col items-center justify-center">
               <span className="text-center font-spartan font-medium underline">

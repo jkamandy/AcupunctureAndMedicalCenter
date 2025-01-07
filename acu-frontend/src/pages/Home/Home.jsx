@@ -136,13 +136,15 @@ const Home = () => {
               </span>
             </div>
             <div className="flex">
-              <Button
-                label="Schedule an Appointment"
-                onClick={handleClick}
-                bordered={true} //
-                // className="border-[1px] border-black p-1 m-1"
-                className="mx-0 mt-5 4xl:text-[20px]"
-              />
+              <a href="mailto:test@gmail.com">
+                <Button
+                  label="Schedule an Appointment"
+                  onClick={handleClick}
+                  bordered={true} //
+                  // className="border-[1px] border-black p-1 m-1"
+                  className="mx-0 mt-5 4xl:text-[20px]"
+                />
+              </a>
             </div>
           </div>
 
