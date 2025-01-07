@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import CardFrame from '../../../shared/components/CardFrame/CardFrame';
 
-const CardStack = ({ cardsInfoFirst }) => {
+const CardStack = ({ cardsInfoFirst, isFlip }) => {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef(null);
 
@@ -46,6 +46,7 @@ const CardStack = ({ cardsInfoFirst }) => {
               title={title}
               description={description[0]}
               bgImage={description[1]}
+              isFlip={isFlip}
             />
           </div>
         ))}

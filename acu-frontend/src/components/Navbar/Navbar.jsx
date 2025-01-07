@@ -33,9 +33,9 @@ const Navbar = () => {
             // className="border-[1px] border-black p-1 m-1"
           />
         </Link>
-        <Link to="/Testmonials">
+        {/* <Link to="/Testmonials">
           <Button className="mx-2" label="Testimonials" onClick={handleClick} />
-        </Link>
+        </Link> */}
         <Link to="/FAQ">
           <Button
             className="mx-2"

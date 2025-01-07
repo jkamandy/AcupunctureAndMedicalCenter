@@ -74,9 +74,30 @@ const OurServices = () => {
               Our Services
             </h1>
           </div>
+          <div className="mt-2 flex w-[1200px] items-center">
+            <span className="z-10 self-start font-spartan text-[20px] font-light text-[#D6D6D6]">
+              Discover the range of services we offer to help you achieve
+              optimal health and wellness. From expert{' '}
+              <span className="font-semibold text-[#92BF7C]">
+                acupuncture treatments
+              </span>{' '}
+              to{' '}
+              <span className="font-semibold text-[#92BF7C]">
+                therapeutic massages
+              </span>{' '}
+              and holistic{' '}
+              <span className="font-semibold text-[#92BF7C]">
+                herbal remedies
+              </span>{' '}
+              , our personalized care is designed to meet your unique needs.
+              Explore how our services can bring balance and vitality to your
+              life.
+            </span>
+          </div>
           <div className="mb-[100px] flex w-full flex-col items-center justify-center">
             {/* <AppAccordion /> */}
             <CardStack
+              isFlip
               cardsInfoFirst={{
                 Acupuncture: [
                   `A traditional Chinese medicine practice that involves inserting thin needles into specific points on the body to stimulate energy flow, known as "Qi" (pronounced "chee"). It is commonly used to relieve pain, reduce stress, and promote overall well-being by balancing the body's natural energy pathways. Modern research also suggests it may help with various conditions, including migraines, arthritis, and anxiety.`,
@@ -97,6 +118,7 @@ const OurServices = () => {
               }}
             />
             <CardStack
+              isFlip
               cardsInfoFirst={{
                 'Tens Electro Muscle Stimulation': [
                   `TENS (Transcutaneous Electrical Nerve Stimulation) is a therapy that uses a device to deliver low-voltage electrical currents through electrodes placed on the skin. This stimulation targets nerves and muscles to relieve pain, reduce inflammation, and improve circulation. Commonly used for managing chronic pain, muscle rehabilitation, and post-injury recovery, TENS is a non-invasive and drug-free treatment option.`,
@@ -116,15 +138,6 @@ const OurServices = () => {
                 ],
               }}
             />
-          </div>
-          <div className="mb-[100px] mt-2 flex w-[1200px] items-center">
-            <span className="z-10 self-start font-spartan text-[20px] font-light text-[#D6D6D6]">
-              Discover the range of services we offer to help you achieve
-              optimal health and wellness. From expert acupuncture treatments to
-              therapeutic massages and holistic herbal remedies, our
-              personalized care is designed to meet your unique needs. Explore
-              how our services can bring balance and vitality to your life.
-            </span>
           </div>
         </div>
       </div>

@@ -21,7 +21,7 @@ const Button = ({
   standard,
 }) => {
   return (
-    <div>
+    <div className="z-10">
       <button
         type={type}
         onClick={onClick}

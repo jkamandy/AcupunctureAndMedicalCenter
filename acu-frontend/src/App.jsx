@@ -7,6 +7,8 @@ import Home from './pages/Home/Home';
 import FAQ from './pages/FAQ/FAQ';
 import About from './pages/About/About';
 import OurServices from './pages/OurServices/OurServices';
+import Testimonals from './components/Testimonals/Testimonials';
+import Error from './pages/Error/Error';
 
 function App() {
   return (
@@ -17,7 +19,7 @@ function App() {
         <Route path="/About" element={<About />} />
         <Route path="/OurServices" element={<OurServices />} />
 
-        <Route path="*" element={<div>404 Page Not Found</div>} />
+        <Route path="*" element={<Error />} />
 
         {/* <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} /> */}
