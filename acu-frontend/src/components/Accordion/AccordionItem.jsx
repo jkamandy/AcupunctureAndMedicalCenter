@@ -11,7 +11,7 @@ const AccordionItem = ({ value, header, children }) => {
       <Accordion.Header>
         <Accordion.Trigger
           className={clsx(
-            'AccordionTrigger group flex w-full items-center justify-between px-4 py-2 text-left font-spartan text-[20px] text-[#D6D6D6]',
+            'AccordionTrigger group flex w-full items-center justify-between px-1 py-2 text-left font-spartan text-[20px] text-[#D6D6D6]',
             'hover:text-[#92BF7C]',
           )}
         >

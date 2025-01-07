@@ -9,8 +9,9 @@ import About from './pages/About/About';
 import OurServices from './pages/OurServices/OurServices';
 import Testimonals from './components/Testimonals/Testimonials';
 import Error from './pages/Error/Error';
-import ScrollToSection from './functions/ScrollToSection/ScrollToSection';
+// import ScrollToSection from './functions/ScrollToSection/ScrollToSection';
 import ContactPage from './pages/Contact/Contact';
+import MeetTheTeam from './pages/MeetTheTeam/MeetTheTeam';
 
 // import ScrollRestoration from 'react-router-dom';
 
@@ -22,7 +23,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/FAQ" element={<FAQ />} />
-        <Route path="/About" element={<About />} />
+        <Route path="/About" element={<MeetTheTeam />} />
         <Route path="/OurServices" element={<OurServices />} />
         <Route path="/Contact" element={<ContactPage />} />
 

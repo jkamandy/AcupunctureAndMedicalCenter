@@ -75,7 +75,7 @@ const FAQ = () => {
                 : 'translate-y-10 opacity-0'
             }`}
           >
-            <span className="z-10 self-start font-spartan text-[20px] font-light text-[#D6D6D6]">
+            <span className="z-10 self-start font-spartan text-[18px] font-light text-[#D6D6D6]">
               Have other questions? Be sure to give us a call so we can help
               give you the right information!
             </span>

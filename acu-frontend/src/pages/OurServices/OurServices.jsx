@@ -79,7 +79,7 @@ const OurServices = () => {
             </h1>
           </div>
           <div className="mt-2 flex w-[1200px] items-center">
-            <span className="z-10 self-start font-spartan text-[20px] font-light text-[#D6D6D6]">
+            <span className="z-10 self-start font-spartan text-[18px] font-light text-[#D6D6D6]">
               Discover the range of services we offer to help you achieve
               optimal health and wellness. From expert{' '}
               <span className="font-semibold text-[#92BF7C]">
