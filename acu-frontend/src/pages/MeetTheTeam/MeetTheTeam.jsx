@@ -122,7 +122,7 @@ const MeetTheTeam = () => {
               page, and we will be delighted to answer any questions that have
               not been answered for you through our site.
             </span>
-            <div className="mt-10">
+            <div className="mt-[100px]">
               <img className="scale-125" src={AMCbanner}></img>
             </div>
           </div>

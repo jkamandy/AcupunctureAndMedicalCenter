@@ -14,7 +14,7 @@ const Contact = ({ title, body, images }) => {
       {/* <div className="flex flex-col"> */}
       <div
         id="Contact"
-        className={`relative flex h-auto w-[80%] rounded-lg bg-multi-gradient p-8 hover:bg-opacity-50 hover:[transition:color_0.3s_ease-in-out;]`}
+        className={`relative flex h-auto w-[1200px] rounded-lg bg-multi-gradient p-8 hover:bg-opacity-50 hover:[transition:color_0.3s_ease-in-out;]`}
       >
         <div className="flex w-1/2 items-center justify-center">
           <div className="flex flex-col items-center justify-center">

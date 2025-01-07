@@ -161,7 +161,7 @@ const Home = () => {
         <div className="flex flex-col justify-start text-[#D6D6D6]">
           {/* ---- Mission Statement + Nav Cards ---- */}
           <div className="relative ml-[50px] mt-[150px] w-[1090px]">
-            <span className="font-spartan text-[30px] font-light leading-[36px] text-[#D6D6D6]">
+            <span className="font-spartan text-[24px] font-light leading-[30px] text-[#D6D6D6]">
               Our mission is to provide{' '}
               <span className="font-semibold text-[#92BF7C]">personalized</span>
               ,{' '}
@@ -176,8 +176,8 @@ const Home = () => {
               cardsInfoFirst={{
                 'Health Insurance': ['/'],
                 'Our Services': ['/OurServices'],
-                Testimonials: ['/'],
-                'Meet the Team': ['/'],
+                'Frequently Asked Questions': ['/FAQ'],
+                'About the Team': ['/About'],
               }}
             />
           </div>
@@ -190,7 +190,7 @@ const Home = () => {
 
           <div className="mr-[50px] flex justify-end text-end">
             <div className="relative ml-[50px] w-[1090px]">
-              <span className="font-spartan text-[30px] font-light leading-[36px] text-[#D6D6D6]">
+              <span className="font-spartan text-[24px] font-light leading-[30px] text-[#D6D6D6]">
                 <span className="font-semibold text-[#92BF7C]">
                   We're here to help!
                 </span>{' '}
@@ -204,7 +204,7 @@ const Home = () => {
 
           {/* ---- Contact ---- */}
           <div
-            className="my-[200px] flex flex-col items-center justify-center"
+            className="my-[120px] flex flex-col items-center justify-center"
             id="Contact"
           >
             <Contact />
