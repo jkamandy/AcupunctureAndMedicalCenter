@@ -11,6 +11,7 @@ import Button from '../../shared/components/Button/Button';
 const Contact = ({ title, body, images }) => {
   return (
     <>
+      {/* <div className="flex flex-col"> */}
       <div
         className={`relative flex h-auto w-[80%] rounded-lg bg-multi-gradient p-8 hover:bg-opacity-50 hover:[transition:color_0.3s_ease-in-out;]`}
       >
@@ -20,7 +21,7 @@ const Contact = ({ title, body, images }) => {
               Contact Us
             </h1>
             <span className="text-center font-spartan font-light">
-              (949)-206-1040 • 30212 Tomas, Suite 180
+              Tel: (949)-206-1040 • 30212 Tomas, Suite 180
             </span>
             <div className="mt-6 flex w-full items-center justify-center [&_img:not(:first-of-type)]:ml-5">
               <img src={ins}></img>
@@ -77,6 +78,10 @@ const Contact = ({ title, body, images }) => {
           ></iframe>
         </div>
       </div>
+      {/* <div>
+          <span className="text-white">test</span>
+        </div> */}
+      {/* </div> */}
     </>
   );
 };
