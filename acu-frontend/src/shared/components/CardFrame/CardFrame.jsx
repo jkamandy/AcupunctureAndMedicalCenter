@@ -1,12 +1,23 @@
 import React from 'react';
 import { useState } from 'react';
 import ReactCardFlip from 'react-card-flip';
+import { useNavigate } from 'react-router-dom';
 
-const CardFrame = ({ title, description, bgImage, isFlip }) => {
+const CardFrame = ({ title, description, bgImage, isFlip, path }) => {
   const [isFlipped, setIsFlipped] = useState(false);
+  const navigate = useNavigate();
 
   const handleFlip = () => {
     setIsFlipped((prev) => !prev);
+  };
+
+  const handleClick = () => {
+    if (path) {
+      console.log('this is the path: ', path);
+      navigate(path);
+    } else {
+      console.log('no path');
+    }
   };
 
   return (
@@ -44,6 +55,7 @@ const CardFrame = ({ title, description, bgImage, isFlip }) => {
             backgroundImage: `${bgImage ? `url(${bgImage})` : `none`}`,
           }}
           className={`relative flex h-[360px] items-center justify-center ${!bgImage && 'bg-black'} rounded-none bg-opacity-40 hover:cursor-pointer hover:bg-opacity-50 hover:[transition:color_0.3s_ease-in-out;]`}
+          onClick={handleClick}
         >
           <div className="p-5">
             <span className="flex text-center font-spartan text-[48px] leading-[45px] text-[#D6D6D6]">

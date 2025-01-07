@@ -170,11 +170,12 @@ const Home = () => {
           </div>
           <div className="mt-12">
             <CardStack
+              // repurposing empty descriptions to store path if the card is not flippable
               cardsInfoFirst={{
-                'Health Insurance': '',
-                'Our Services': '',
-                Testimonials: '',
-                'Meet the Team': '',
+                'Health Insurance': ['/'],
+                'Our Services': ['/OurServices'],
+                Testimonials: ['/'],
+                'Meet the Team': ['/'],
               }}
             />
           </div>

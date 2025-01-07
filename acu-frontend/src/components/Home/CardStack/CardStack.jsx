@@ -47,6 +47,7 @@ const CardStack = ({ cardsInfoFirst, isFlip }) => {
               description={description[0]}
               bgImage={description[1]}
               isFlip={isFlip}
+              path={!isFlip && description[0]}
             />
           </div>
         ))}

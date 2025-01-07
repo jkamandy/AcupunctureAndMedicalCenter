@@ -69,7 +69,6 @@ const FAQ = () => {
             <AppAccordion />
           </div>
           <div
-            ref={ref}
             className={`mb-[100px] mt-6 flex items-center transition-all duration-1000 ${
               isVisible
                 ? 'translate-y-0 opacity-100'

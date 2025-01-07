@@ -28,13 +28,13 @@ const Contact = ({ title, body, images }) => {
               <img src={fb}></img>
               <img src={ml}></img>
             </div>
-            <flex className="flex items-center justify-center">
+            <div className="flex items-center justify-center">
               <Button
                 bordered
                 label="Schedule An Appointment"
                 className="mt-8 bg-[#868686] bg-opacity-50 font-spartan text-[18px] font-light hover:bg-[#434343]"
               ></Button>
-            </flex>
+            </div>
             <div className="mt-8 flex flex-col items-center justify-center">
               <span className="text-center font-spartan font-medium underline">
                 Hours:

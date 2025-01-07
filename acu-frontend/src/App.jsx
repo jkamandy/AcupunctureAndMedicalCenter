@@ -10,9 +10,12 @@ import OurServices from './pages/OurServices/OurServices';
 import Testimonals from './components/Testimonals/Testimonials';
 import Error from './pages/Error/Error';
 
+// import ScrollRestoration from 'react-router-dom';
+
 function App() {
   return (
     <Router>
+      {/* <ScrollRestoration /> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/FAQ" element={<FAQ />} />
