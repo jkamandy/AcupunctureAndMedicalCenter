@@ -70,7 +70,7 @@ const ContactPage = () => {
       {/* <img className={`h-auto w-screen opacity-30 self-center fixed ${isVisible ? "backdrop-blur-sm" : "blur-lg"} transition duration-500 ease-in-out`} src={AMCbg}></img> */}
       {/* TODO: convert the video into its own component */}
       <video
-        className={`fixed left-1/2 top-1/2 min-h-full min-w-full -translate-x-1/2 -translate-y-1/2 transform object-cover opacity-90 backdrop-blur-sm transition duration-500 ease-in-out ${isVisible ? 'backdrop-blur-sm' : 'blur-lg'}`}
+        className={`fixed left-1/2 top-1/2 min-h-full min-w-full -translate-x-1/2 -translate-y-1/2 transform object-cover opacity-90 blur-lg backdrop-blur-sm transition duration-500 ease-in-out`}
         autoPlay
         muted
         loop
@@ -79,11 +79,11 @@ const ContactPage = () => {
         <source src={AMCbgVideo} type="video/mp4" />
         {/* If the video is not supported on certain browsers, the bgImage below will substitute it */}
         <img
-          className={`fixed h-auto w-screen self-center opacity-30 ${isVisible ? 'backdrop-blur-sm' : 'blur-lg'} transition duration-500 ease-in-out`}
+          className={`fixed h-auto w-screen self-center opacity-30 blur-lg transition duration-500 ease-in-out`}
           src={AMCbg}
         ></img>
       </video>
-      <div className="h-screen w-screen">
+      <div className="h-auto w-screen">
         <div>
           <Navbar />
         </div>
@@ -92,7 +92,7 @@ const ContactPage = () => {
         <div
           //   className="flex h-screen flex-col items-center justify-center text-[#D6D6D6]"
           ref={ref}
-          className={`flex h-screen flex-col items-center justify-center text-[#D6D6D6] transition-all duration-1000 ${
+          className={`flex h-screen flex-col items-center justify-between text-[#D6D6D6] transition-all duration-1000 ${
             isPageVisible
               ? 'translate-y-0 opacity-100'
               : 'translate-y-10 opacity-0'
@@ -100,7 +100,7 @@ const ContactPage = () => {
         >
           {/* ---- Contact ---- */}
           <div
-            className="my-[200px] flex flex-col items-center justify-center"
+            className="mb-[100px] mt-[150px] flex flex-col items-center justify-center"
             id="Contact"
           >
             <Contact />
@@ -114,6 +114,9 @@ const ContactPage = () => {
                 us an email and we will respond within one business day.
               </span>
             </div>
+          </div>
+          <div className="relative flex">
+            <Footer />
           </div>
         </div>
 
@@ -134,11 +137,8 @@ const ContactPage = () => {
         </div> */}
 
         {/* <div className=' text-[#D6D6D6] flex justify-center items-center'><Testimonals/> </div> */}
-
-        <div>
-          <Footer />
-        </div>
       </div>
+      {/* <Footer /> */}
     </div>
   );
 };
