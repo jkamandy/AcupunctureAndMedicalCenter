@@ -21,6 +21,14 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="flex items-center">
+        <Link to="/">
+          <Button
+            className="mx-2"
+            label="Home"
+            onClick={handleClick}
+            // className="border-[1px] border-black p-1 m-1"
+          />
+        </Link>
         <Link to="/About">
           <Button
             className="mx-2"

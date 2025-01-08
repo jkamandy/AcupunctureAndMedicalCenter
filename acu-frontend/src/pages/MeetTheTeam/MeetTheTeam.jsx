@@ -64,11 +64,11 @@ const MeetTheTeam = () => {
           }`}
         >
           <div className="mt-[100px]">
-            <h1 className="flex gap-12 font-spartan text-[85px] font-medium tracking-[-3px] drop-shadow-md">
+            <h1 className="flex gap-12 font-spartan text-[75px] font-medium tracking-[-3px] drop-shadow-md md:text-[85px]">
               Who We Are
             </h1>
           </div>
-          <div className="mb-[100px] mt-2 flex w-[1200px] flex-col items-center [&_span:not(:first-of-type)]:mt-5">
+          <div className="mb-[100px] mt-2 flex w-[80%] flex-col items-center xl:w-[1200px] [&_span:not(:first-of-type)]:mt-5">
             <span className="z-10 self-start font-spartan text-[18px] font-light text-[#D6D6D6]">
               Acupuncture and Medical Center's mission is to provide
               personalized, high-quality care on an as-needed or preventative
@@ -123,7 +123,7 @@ const MeetTheTeam = () => {
               not been answered for you through our site.
             </span>
             <div className="mt-[100px]">
-              <img className="scale-125" src={AMCbanner}></img>
+              <img className="scale-105 md:scale-125" src={AMCbanner}></img>
             </div>
           </div>
         </div>
