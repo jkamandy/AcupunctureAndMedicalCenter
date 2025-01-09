@@ -65,7 +65,7 @@ const FAQ = () => {
                 : 'translate-y-10 opacity-0'
             }`}
           >
-            <h1 className="flex gap-12 font-spartan text-[85px] font-medium tracking-[-3px] drop-shadow-md">
+            <h1 className="flex gap-12 font-spartan text-[35px] font-medium tracking-[-1px] drop-shadow-md max-2xs:text-[30px] xs:text-[55px] md:text-[75px] md:tracking-[-3px]">
               Frequently Asked Questions
             </h1>
           </div>
@@ -73,13 +73,13 @@ const FAQ = () => {
             <AppAccordion />
           </div>
           <div
-            className={`mb-[100px] mt-6 flex items-center transition-all duration-1000 ${
+            className={`mb-[100px] mt-6 flex w-[80%] items-center justify-center transition-all duration-1000 ${
               isVisible
                 ? 'translate-y-0 opacity-100'
                 : 'translate-y-10 opacity-0'
             }`}
           >
-            <span className="z-10 self-start font-spartan text-[18px] font-light text-[#D6D6D6]">
+            <span className="z-10 self-start text-center font-spartan text-[18px] font-light text-[#D6D6D6]">
               Have other questions? Be sure to give us a call so we can help
               give you the right information!
             </span>

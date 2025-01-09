@@ -39,9 +39,9 @@ const CardStack = ({ cardsInfoFirst, isFlip }) => {
 
       {/* TODO: Create general card vs FlipCard */}
 
-      <div className="z-[5] flex items-center justify-start gap-6 pt-14">
+      <div className="z-[5] flex flex-col items-center justify-start gap-6 pt-14 xs:grid xs:grid-cols-2 2lg:flex 2lg:flex-row">
         {Object.entries(cardsInfoFirst).map(([title, description], index) => (
-          <div className="w-[280px]">
+          <div className="flex w-[280px] items-center justify-center [&>div]:w-full">
             <CardFrame
               title={title}
               description={description[0]}

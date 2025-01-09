@@ -14,14 +14,14 @@ const Contact = ({ title, body, images }) => {
       {/* <div className="flex flex-col"> */}
       <div
         id="Contact"
-        className={`relative flex h-auto w-[1200px] rounded-lg bg-multi-gradient p-8 hover:bg-opacity-50 hover:[transition:color_0.3s_ease-in-out;]`}
+        className={`relative flex h-auto w-[80%] bg-multi-gradient p-8 hover:bg-opacity-50 hover:[transition:color_0.3s_ease-in-out;] max-2lg:flex-col max-xs:w-full 2lg:w-[1200px] 2lg:rounded-lg`}
       >
-        <div className="flex w-1/2 items-center justify-center">
+        <div className="flex w-full items-center justify-center 2lg:w-1/2">
           <div className="flex flex-col items-center justify-center">
-            <h1 className="flex gap-12 font-spartan text-[85px] font-medium tracking-[-3px] drop-shadow-md">
+            <h1 className="flex gap-12 font-spartan text-[55px] font-medium tracking-[-3px] drop-shadow-md 2lg:text-[85px]">
               Contact Us
             </h1>
-            <span className="text-center font-spartan font-light">
+            <span className="text-center font-spartan text-[15px] font-light 2lg:text-[18px]">
               Tel: (949)-206-1040 • 30212 Tomas, Suite 180
             </span>
             <div className="mt-6 flex w-full items-center justify-center [&_a:not(:first-of-type)]:ml-5">
@@ -43,7 +43,7 @@ const Contact = ({ title, body, images }) => {
                 <Button
                   bordered
                   label="Schedule An Appointment"
-                  className="mt-8 bg-[#868686] bg-opacity-50 font-spartan text-[18px] font-light hover:bg-[#434343]"
+                  className="mt-8 bg-[#868686] bg-opacity-50 font-spartan text-[24px] font-light hover:bg-[#434343]"
                 ></Button>
               </a>
             </div>
@@ -76,7 +76,7 @@ const Contact = ({ title, body, images }) => {
 
           {/* <img className='flex z-0 absolute right-0 bottom-0' src={swMachine}></img> */}
         </div>
-        <div className="flex w-1/2 items-center justify-center">
+        <div className="flex w-full items-center justify-center max-2lg:mt-10 2lg:w-1/2">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.8266157458177!2d-117.59833838479707!3d33.64236188071774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcda8b99aa1bd5%3A0x72593a3c2f1b18e6!2s30212%20Tomas%2C%20Rancho%20Santa%20Margarita%2C%20CA%2092688!5e0!3m2!1sen!2sus!4v1702394653443"
             width="500"

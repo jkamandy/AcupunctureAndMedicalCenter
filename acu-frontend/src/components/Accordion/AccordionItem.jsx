@@ -15,8 +15,8 @@ const AccordionItem = ({ value, header, children }) => {
             'hover:text-[#92BF7C]',
           )}
         >
-          {header}
-          <IoChevronDownSharp className="AccordionChevron h-10 w-5" />
+          <div className="flex w-[90%]">{header}</div>
+          <IoChevronDownSharp className="AccordionChevron h-10 w-[20px]" />
         </Accordion.Trigger>
       </Accordion.Header>
       <Accordion.Content className="AccordionContent px-5">

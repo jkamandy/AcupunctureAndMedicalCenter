@@ -33,7 +33,7 @@ const Button = ({
         <a
           // href={`${mailTo && `mailto:${mailTo}`}`}
           target="_blank"
-          className={`${bordered ? 'font-light' : 'font-normal text-[#656565] group-hover:text-[#92BF7C] group-hover:underline group-hover:opacity-80 group-hover:[transition:color_0.3s_ease-in-out;]'} m-3 font-spartan text-[16px] tracking-[-0.1px] 4xl:text-[20px]`}
+          className={`${bordered ? 'font-light' : 'font-normal text-[#656565] group-hover:text-[#92BF7C] group-hover:underline group-hover:opacity-80 group-hover:[transition:color_0.3s_ease-in-out;]'} m-3 font-spartan text-[20px] tracking-[-0.1px] 2lg:text-[16px] 4xl:text-[20px]`}
         >
           {label}
         </a>

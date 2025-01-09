@@ -101,12 +101,12 @@ const ContactPage = () => {
         >
           {/* ---- Contact ---- */}
           <div
-            className="mb-[100px] mt-[150px] flex flex-col items-center justify-center"
+            className="mb-[100px] flex w-full flex-col items-center justify-center md:mt-[150px]"
             id="Contact"
           >
             <Contact />
-            <div className="flex w-[1200px] items-center justify-center">
-              <span className="z-10 mt-5 font-spartan text-[18px] font-light text-[#D6D6D6]">
+            <div className="flex w-[80%] items-center justify-center 2lg:w-[1200px]">
+              <span className="z-10 mt-5 text-center font-spartan text-[18px] font-light text-[#D6D6D6]">
                 Acupuncture and Medical Center can be reached during normal
                 business hours by phone. If you have a medical emergency, please
                 dial 911. If you have questions about our services, accepted
@@ -116,7 +116,7 @@ const ContactPage = () => {
               </span>
             </div>
             <div className="mt-[100px]">
-              <img className="scale-125" src={AMCbanner}></img>
+              <img className="scale-100 2lg:scale-125" src={AMCbanner}></img>
             </div>
           </div>
           <div className="relative flex">

@@ -74,11 +74,11 @@ const OurServices = () => {
           }`}
         >
           <div className="mt-[100px]">
-            <h1 className="flex gap-12 font-spartan text-[85px] font-medium tracking-[-3px] drop-shadow-md">
+            <h1 className="flex gap-12 font-spartan text-[35px] font-medium tracking-[-1px] drop-shadow-md xs:text-[55px] md:text-[75px] md:tracking-[-3px]">
               Our Services
             </h1>
           </div>
-          <div className="mt-2 flex w-[1200px] items-center">
+          <div className="mt-2 flex w-[80%] items-center 2lg:w-[1200px]">
             <span className="z-10 self-start font-spartan text-[18px] font-light text-[#D6D6D6]">
               Discover the range of services we offer to help you achieve
               optimal health and wellness. From expert{' '}

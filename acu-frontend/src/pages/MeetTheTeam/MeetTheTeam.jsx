@@ -64,7 +64,7 @@ const MeetTheTeam = () => {
           }`}
         >
           <div className="mt-[100px]">
-            <h1 className="flex gap-12 font-spartan text-[75px] font-medium tracking-[-3px] drop-shadow-md md:text-[85px]">
+            <h1 className="flex gap-12 font-spartan text-[35px] font-medium tracking-[-1px] drop-shadow-md xs:text-[55px] md:text-[75px] md:tracking-[-3px]">
               Who We Are
             </h1>
           </div>

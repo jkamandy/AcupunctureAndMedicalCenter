@@ -9,14 +9,14 @@ const InfoBanner = ({ title, body, images }) => {
   return (
     <>
       <div
-        className={`relative flex h-[300px] w-[80%] flex-col items-start justify-start rounded-br-xl rounded-tr-xl bg-multi-gradient pl-[50px] hover:bg-opacity-50 hover:[transition:color_0.3s_ease-in-out;]`}
+        className={`relative flex flex-col items-start justify-start bg-multi-gradient px-8 hover:bg-opacity-50 hover:[transition:color_0.3s_ease-in-out;] 2lg:w-[80%] 2lg:rounded-br-xl 2lg:rounded-tr-xl`}
       >
-        <div className="py-8">
+        <div className="flex-col justify-start py-8">
           <img src={swImg}></img>
           {/* <span className='leading-[38px] font-spartan text-[48px] flex text-center font-semibold text-[#92BF7C] underline'>{title}</span> */}
           <div className="flex">
             <div className="mt-3 flex flex-col">
-              <span className="mt-5 w-[70%] font-spartan text-[18px] font-light leading-[21px] text-[#D6D6D6] 4xl:text-[20px]">
+              <span className="mt-5 font-spartan text-[18px] font-light leading-[21px] text-[#D6D6D6] sm:w-[70%] 4xl:text-[20px]">
                 Experience the latest in non-invasive pain relief with the
                 Stemwave machine. Using advanced acoustic wave therapy, this
                 innovative technology promotes healing, reduces inflammation,
@@ -24,7 +24,7 @@ const InfoBanner = ({ title, body, images }) => {
                 Stemwave machine is designed to help you get back to feeling
                 your best.
               </span>
-              <div className="flex items-center">
+              <div className="z-10 flex items-center justify-start max-sm:ml-0 max-sm:flex-col max-sm:items-start">
                 <span className="mt-5 font-spartan text-[18px] font-light leading-[21px] text-[#D6D6D6] 4xl:text-[20px]">
                   {' '}
                   <span className="font-semibold text-[#92BF7C] underline">
@@ -37,7 +37,7 @@ const InfoBanner = ({ title, body, images }) => {
                   url="https://stemwave.com/our-technology/"
                   bordered
                   label="Learn more about StemWave"
-                  className="ml-6 mt-5 bg-[#868686] bg-opacity-50 font-spartan text-[18px] font-light hover:bg-[#434343]"
+                  className="mt-5 bg-[#868686] bg-opacity-50 font-spartan text-[18px] font-light hover:bg-[#434343] sm:ml-6"
                 ></Button>
               </div>
             </div>

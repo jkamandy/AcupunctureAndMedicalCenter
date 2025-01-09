@@ -109,25 +109,25 @@ const Home = () => {
               Rancho Santa Margarita • (949)-206-1040
             </span>{' '}
           </div>
-          <div className="absolute left-20 flex h-auto w-[800px] flex-col [&_h1]:leading-[90px]">
+          <div className="absolute left-10 flex h-auto flex-col md:left-20 2lg:w-[800px] [&_h1]:leading-[60px] md:[&_h1]:leading-[90px]">
             <div className="relative mt-10">
               {' '}
-              <h1 className="flex gap-12 font-spartan text-[85px] font-medium tracking-[-3px] drop-shadow-md">
+              <h1 className="flex gap-12 font-spartan text-[65px] font-medium tracking-[-2px] drop-shadow-md md:text-[85px] md:tracking-[-3px]">
                 Compassion with us
               </h1>
             </div>
             <div className="relative">
-              <h1 className="relative flex gap-12 font-spartan text-[85px] font-medium tracking-[-3px] drop-shadow-md">
+              <h1 className="relative flex gap-12 font-spartan text-[65px] font-medium tracking-[-2px] drop-shadow-md md:text-[85px] md:tracking-[-3px]">
                 is a{' '}
                 <img
-                  className="absolute bottom-0 left-[92px] scale-90"
+                  className="absolute bottom-[-15px] left-[65px] scale-75 md:bottom-0 md:left-[92px] md:scale-90"
                   src={AMCLogo}
                 ></img>
                 radition
               </h1>
             </div>
 
-            <div className="relative mt-5">
+            <div className="relative mt-5 max-2lg:w-[70%]">
               <span className="pt-10 font-spartan text-[18px] font-light leading-[18px] 4xl:text-[20px]">
                 All new patients receive a{' '}
                 <span className="font-semibold">complementary</span> half-hour
@@ -150,7 +150,7 @@ const Home = () => {
 
           <div
             onClick={scrollDown}
-            className="group absolute bottom-8 flex h-[50px] w-[50px] items-center justify-center text-[32px] hover:cursor-pointer"
+            className="group absolute bottom-8 hidden h-[50px] w-[50px] items-center justify-center text-[32px] hover:cursor-pointer 2lg:flex"
           >
             <IoChevronDownSharp
               className={`animate-pulse-down transition-opacity duration-500 group-hover:text-[#92BF7C] ${isVisible ? 'opacity-100' : 'pointer-events-none opacity-0'}`}
@@ -160,7 +160,7 @@ const Home = () => {
 
         <div className="flex flex-col justify-start text-[#D6D6D6]">
           {/* ---- Mission Statement + Nav Cards ---- */}
-          <div className="relative ml-[50px] mt-[150px] w-[1090px]">
+          <div className="relative ml-[50px] mt-[150px] w-[80%] 2lg:w-[1090px]">
             <span className="font-spartan text-[24px] font-light leading-[30px] text-[#D6D6D6]">
               Our mission is to provide{' '}
               <span className="font-semibold text-[#92BF7C]">personalized</span>
@@ -189,7 +189,7 @@ const Home = () => {
           </div>
 
           <div className="mr-[50px] flex justify-end text-end">
-            <div className="relative ml-[50px] w-[1090px]">
+            <div className="relative ml-[50px] w-[80%] 2lg:w-[1090px]">
               <span className="font-spartan text-[24px] font-light leading-[30px] text-[#D6D6D6]">
                 <span className="font-semibold text-[#92BF7C]">
                   We're here to help!
@@ -208,8 +208,8 @@ const Home = () => {
             id="Contact"
           >
             <Contact />
-            <div className="flex w-[1200px] items-center justify-center">
-              <span className="z-10 mt-5 font-spartan text-[18px] font-light text-[#D6D6D6]">
+            <div className="flex w-[80%] items-center justify-center 2xl:w-[1200px]">
+              <span className="z-10 mt-5 text-center font-spartan text-[18px] font-light leading-[23px] text-[#D6D6D6]">
                 Acupuncture and Medical Center can be reached during normal
                 business hours by phone. If you have a medical emergency, please
                 dial 911. If you have questions about our services, accepted
