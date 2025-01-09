@@ -73,7 +73,7 @@ const OurServices = () => {
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}
         >
-          <div className="mt-[100px]">
+          <div className="mt-[50px] md:mt-[100px]">
             <h1 className="flex gap-12 font-spartan text-[35px] font-medium tracking-[-1px] drop-shadow-md xs:text-[55px] md:text-[75px] md:tracking-[-3px]">
               Our Services
             </h1>

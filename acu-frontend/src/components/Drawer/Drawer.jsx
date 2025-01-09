@@ -116,7 +116,7 @@ const NavDrawer = () => {
             fontFamily: '"League Spartan", sans-serif',
             fontSize: '18px',
           },
-          '& .MuiButtonBase-root': {
+          '& .MuiButton-root': {
             minWidth: '50px',
           },
         }}

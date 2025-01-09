@@ -30,7 +30,7 @@ const AppAccordion = ({}) => {
   return (
     <div
       ref={ref}
-      className={`flex w-[80%] items-center justify-center transition-all duration-1000 ${
+      className={`flex w-[85%] items-center justify-center transition-all duration-1000 ${
         isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
       }`}
     >

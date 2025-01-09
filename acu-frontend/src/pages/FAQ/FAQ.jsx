@@ -59,7 +59,7 @@ const FAQ = () => {
           <div
             // className="mt-[100px]"
             ref={ref}
-            className={`mt-[100px] transition-all duration-1000 ${
+            className={`mt-[60px] transition-all duration-1000 md:mt-[100px] ${
               isVisible
                 ? 'translate-y-0 opacity-100'
                 : 'translate-y-10 opacity-0'
@@ -69,7 +69,7 @@ const FAQ = () => {
               Frequently Asked Questions
             </h1>
           </div>
-          <div className="mt-[50px] flex w-full flex-col items-center justify-center">
+          <div className="mt-4 flex w-full flex-col items-center justify-center md:mt-[50px]">
             <AppAccordion />
           </div>
           <div

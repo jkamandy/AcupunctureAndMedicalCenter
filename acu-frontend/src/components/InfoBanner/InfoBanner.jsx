@@ -12,7 +12,7 @@ const InfoBanner = ({ title, body, images }) => {
         className={`relative flex flex-col items-start justify-start bg-multi-gradient px-8 hover:bg-opacity-50 hover:[transition:color_0.3s_ease-in-out;] 2lg:w-[80%] 2lg:rounded-br-xl 2lg:rounded-tr-xl`}
       >
         <div className="flex-col justify-start py-8">
-          <img src={swImg}></img>
+          <img className="flex max-md:scale-75" src={swImg}></img>
           {/* <span className='leading-[38px] font-spartan text-[48px] flex text-center font-semibold text-[#92BF7C] underline'>{title}</span> */}
           <div className="flex">
             <div className="mt-3 flex flex-col">
@@ -32,19 +32,21 @@ const InfoBanner = ({ title, body, images }) => {
                   </span>{' '}
                   and ask about our introductory offer!
                 </span>
-                <Button
-                  standard
-                  url="https://stemwave.com/our-technology/"
-                  bordered
-                  label="Learn more about StemWave"
-                  className="mt-5 bg-[#868686] bg-opacity-50 font-spartan text-[18px] font-light hover:bg-[#434343] sm:ml-6"
-                ></Button>
+                <a href="https://stemwave.com/our-technology/">
+                  <Button
+                    standard
+                    // url="https://stemwave.com/our-technology/"
+                    bordered
+                    label="Learn more about StemWave"
+                    className="mt-5 bg-[#868686] bg-opacity-50 font-spartan text-[18px] font-light hover:bg-[#434343] sm:ml-6"
+                  ></Button>
+                </a>
               </div>
             </div>
           </div>
 
           <img
-            className="absolute bottom-0 right-0 z-0 flex"
+            className="absolute bottom-0 right-0 z-0 flex opacity-30 md:opacity-100"
             src={swMachine}
           ></img>
         </div>

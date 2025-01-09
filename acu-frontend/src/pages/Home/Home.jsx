@@ -160,8 +160,8 @@ const Home = () => {
 
         <div className="flex flex-col justify-start text-[#D6D6D6]">
           {/* ---- Mission Statement + Nav Cards ---- */}
-          <div className="relative ml-[50px] mt-[150px] w-[80%] 2lg:w-[1090px]">
-            <span className="font-spartan text-[24px] font-light leading-[30px] text-[#D6D6D6]">
+          <div className="relative ml-[20px] mt-[150px] w-[80%] md:ml-[50px] 2lg:w-[1090px]">
+            <span className="font-spartan text-[24px] font-light leading-[27px] text-[#D6D6D6]">
               Our mission is to provide{' '}
               <span className="font-semibold text-[#92BF7C]">personalized</span>
               ,{' '}
@@ -188,7 +188,7 @@ const Home = () => {
             <InfoBanner title={'Try Out StemWave!'} />
           </div>
 
-          <div className="mr-[50px] flex justify-end text-end">
+          <div className="mr-[20px] flex justify-end text-end md:mr-[50px]">
             <div className="relative ml-[50px] w-[80%] 2lg:w-[1090px]">
               <span className="font-spartan text-[24px] font-light leading-[30px] text-[#D6D6D6]">
                 <span className="font-semibold text-[#92BF7C]">

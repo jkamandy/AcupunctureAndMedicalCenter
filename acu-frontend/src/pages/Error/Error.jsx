@@ -53,7 +53,7 @@ const Error = () => {
           <h1 className="font-spartan text-[192px] font-medium uppercase leading-[100px] tracking-[-8px] text-white opacity-70">
             404
           </h1>
-          <span className="mt-3 font-spartan text-white opacity-70">
+          <span className="mt-3 w-[80%] text-center font-spartan text-white opacity-70">
             Sorry, the page you are looking for does not exist. Please return to
             the home page.
           </span>
