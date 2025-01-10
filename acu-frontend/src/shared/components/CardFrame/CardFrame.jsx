@@ -62,7 +62,7 @@ const CardFrame = ({ title, description, bgImage, isFlip, path }) => {
           onClick={handleClick}
         >
           <div className="p-5">
-            <span className="flex text-center font-spartan text-[48px] text-[#D6D6D6] max-2lg:text-[28px]">
+            <span className="flex text-center font-spartan text-[48px] leading-[43px] text-[#D6D6D6] max-2lg:text-[28px]">
               {title}
             </span>
           </div>
