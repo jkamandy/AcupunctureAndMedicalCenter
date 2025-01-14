@@ -9,6 +9,8 @@ import Button from '../../shared/components/Button/Button';
 
 // TODO: future -- Create this into a more general component
 const Contact = ({ title, body, images }) => {
+  const teamsURL =
+    'https://teams.microsoft.com/l/chat/0/0?users=vincent.poon@appliedmedical.com';
   return (
     <>
       {/* <div className="flex flex-col"> */}
@@ -39,7 +41,8 @@ const Contact = ({ title, body, images }) => {
               </a>
             </div>
             <div className="flex items-center justify-center">
-              <a href="mailto:test@gmail.com">
+              {/* <a href="mailto:test@gmail.com"> */}
+              <a href={teamsURL}>
                 <Button
                   bordered
                   label="Schedule An Appointment"
