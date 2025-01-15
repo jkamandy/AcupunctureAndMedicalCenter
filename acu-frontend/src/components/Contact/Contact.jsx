@@ -41,8 +41,8 @@ const Contact = ({ title, body, images }) => {
               </a>
             </div>
             <div className="flex items-center justify-center">
-              {/* <a href="mailto:test@gmail.com"> */}
-              <a href={teamsURL}>
+              <a href="mailto:test@gmail.com">
+                {/* <a href={teamsURL}> */}
                 <Button
                   bordered
                   label="Schedule An Appointment"
