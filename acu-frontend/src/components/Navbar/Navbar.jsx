@@ -55,9 +55,14 @@ const Navbar = () => {
               // className="border-[1px] border-black p-1 m-1"
             />
           </Link>
-          {/* <Link to="/Testmonials">
-          <Button className="mx-2" label="Testimonials" onClick={handleClick} />
-        </Link> */}
+          <Link to="/Testimonials">
+            <Button
+              className="mx-2"
+              label="Testimonials"
+              onClick={handleClick}
+              // className="border-[1px] border-black p-1 m-1"
+            />
+          </Link>
           <Link to="/FAQ">
             <Button
               className="mx-2"

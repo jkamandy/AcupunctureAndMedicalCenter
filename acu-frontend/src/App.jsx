@@ -12,6 +12,7 @@ import Error from './pages/Error/Error';
 // import ScrollToSection from './functions/ScrollToSection/ScrollToSection';
 import ContactPage from './pages/Contact/Contact';
 import MeetTheTeam from './pages/MeetTheTeam/MeetTheTeam';
+import Testimonials from './pages/Testimonials/Testimonials';
 
 // import ScrollRestoration from 'react-router-dom';
 
@@ -25,6 +26,7 @@ function App() {
         <Route path="/FAQ" element={<FAQ />} />
         <Route path="/About" element={<MeetTheTeam />} />
         <Route path="/OurServices" element={<OurServices />} />
+        <Route path="/Testimonials" element={<Testimonials />} />
         <Route path="/Contact" element={<ContactPage />} />
 
         <Route path="*" element={<Error />} />
