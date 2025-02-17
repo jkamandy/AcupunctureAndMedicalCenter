@@ -20,7 +20,7 @@ import yp from '../../assets/icons/Yelp.svg';
 import ins from '../../assets/icons/Instagram.svg';
 import ml from '../../assets/icons/Mail.svg';
 
-const NavDrawer = () => {
+const NavDrawer = ({ links }) => {
   const [open, setOpen] = React.useState(false);
   const [activeLink, setActiveLink] = React.useState('');
   const location = useLocation();
@@ -52,6 +52,7 @@ const NavDrawer = () => {
           ['Home', '/'],
           ['About', '/About'],
           ['Services', '/OurServices'],
+          ['Testimonials', '/Testimonials'],
           ['FAQ', '/FAQ'],
           ['Contact', '/Contact'],
         ].map((text, index) => (
