@@ -174,7 +174,7 @@ const Home = () => {
             <CardStack
               // repurposing empty descriptions to store path if the card is not flippable
               cardsInfoFirst={{
-                'Health Insurance': ['/'],
+                'Testimonials': ['/Testimonials'],
                 'Our Services': ['/OurServices'],
                 'Frequently Asked Questions': ['/FAQ'],
                 'About the Team': ['/About'],

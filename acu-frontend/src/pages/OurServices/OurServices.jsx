@@ -142,6 +142,19 @@ const OurServices = () => {
                 ],
               }}
             />
+            <CardStack
+              isFlip
+              cardsInfoFirst={{
+                'StemWave Therapy': [
+                  `TENS (Transcutaneous Electrical Nerve Stimulation) is a therapy that uses a device to deliver low-voltage electrical currents through electrodes placed on the skin. This stimulation targets nerves and muscles to relieve pain, reduce inflammation, and improve circulation. Commonly used for managing chronic pain, muscle rehabilitation, and post-injury recovery, TENS is a non-invasive and drug-free treatment option.`,
+                  acu4,
+                ],
+                'Laser Therapy': [
+                  `Products designed to provide essential nutrients, such as vitamins, minerals, amino acids, and herbal extracts, that may be lacking in a person’s diet. They support overall health, boost energy levels, and address specific deficiencies or health concerns. While supplements can enhance well-being, they are most effective when used alongside a balanced diet and healthy lifestyle.`,
+                  acu5,
+                ],
+              }}
+            />
           </div>
         </div>
       </div>

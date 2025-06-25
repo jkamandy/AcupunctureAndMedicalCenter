@@ -73,7 +73,7 @@ const NavDrawer = ({ links }) => {
         ))}
       </List>
 
-      <div className="mt-[200px] flex w-full flex-col items-center justify-center">
+      <div className="mt-[150px] flex w-full flex-col items-center justify-center">
         <span className="font-spartan font-light text-[#D6D6D6] drop-shadow-md 4xl:text-[18px]">
           Rancho Santa Margarita • (949)-206-1040
         </span>{' '}
