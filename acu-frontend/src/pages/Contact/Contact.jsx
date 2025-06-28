@@ -6,6 +6,7 @@ import AMCbanner from '../../assets/acu-banner-light.svg';
 import AMCbgVideo from '../../assets/videos/bg-video.mp4';
 import Footer from '../../components/Footer/Footer';
 import Contact from '../../components/Contact/Contact';
+import SubmissionForm from '../../components/SubmissionForm/SubmissionForm';
 
 /*
     Notes:
@@ -105,20 +106,12 @@ const ContactPage = () => {
             id="Contact"
           >
             <Contact />
-            <div className="flex w-[80%] items-center justify-center 2lg:w-[1200px]">
-              <span className="z-10 mt-5 text-center font-spartan text-[18px] font-light text-[#D6D6D6]">
-                Acupuncture and Medical Center can be reached during normal
-                business hours by phone. If you have a medical emergency, please
-                dial 911. If you have questions about our services, accepted
-                forms of insurance, our facility, or our physicians, please feel
-                free to contact us during normal business hours by phone or send
-                us an email and we will respond within one business day.
-              </span>
-            </div>
+            
             <div className="mt-[100px]">
               <img className="scale-100 2lg:scale-125" src={AMCbanner}></img>
             </div>
           </div>
+          
           <div className="relative flex">
             <Footer />
           </div>
@@ -142,6 +135,7 @@ const ContactPage = () => {
 
         {/* <div className=' text-[#D6D6D6] flex justify-center items-center'><Testimonals/> </div> */}
       </div>
+      
       {/* <Footer /> */}
     </div>
   );

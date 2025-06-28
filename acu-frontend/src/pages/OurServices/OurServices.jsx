@@ -98,7 +98,7 @@ const OurServices = () => {
               life.
             </span>
           </div>
-          <div className="mb-[100px] flex w-full flex-col items-center justify-center">
+          <div className="mb-[50px] flex w-full flex-col items-center justify-center">
             {/* <AppAccordion /> */}
             <CardStack
               isFlip
@@ -150,11 +150,28 @@ const OurServices = () => {
                   acu4,
                 ],
                 'Laser Therapy': [
-                  `Products designed to provide essential nutrients, such as vitamins, minerals, amino acids, and herbal extracts, that may be lacking in a person’s diet. They support overall health, boost energy levels, and address specific deficiencies or health concerns. While supplements can enhance well-being, they are most effective when used alongside a balanced diet and healthy lifestyle.`,
+                  `Low level laser (LLT) is a painless, sterile, non-invasive, drug free treatment 
+                  used to treat a wide variety of pain syndromes, injuries, wounds, fractures, 
+                  neurological conditions and pathologies. Fractures and wounds are found to heal 60% faster reducing the overall cost of treatments. It provides an anti-inflammatory, anti -edematous effect and acts as a natural pain analgesic.
+                  It improves blood circulation and vasodilatation at the injury site. In conjunction with acupuncture recovery is amazingly fast.`,
+                  acu5,
+                ],
+                'Telemedicine': [
+                  `<p>Remote consultations are ideal for individuals who require regular follow-up care for ongoing health conditions, as well as those looking for personalized herbal medicine tailored to their unique needs</p>
+                  <br/>
+                  <ul>
+                    <li>Session length: 15–20 minutes</li>
+                    <li>Consultation fee: $60</li>
+                    </ul>`,
                   acu5,
                 ],
               }}
             />
+          </div>
+          <div className="mt-0 mb-[100px] flex w-[80%] justify-center items-center 2lg:w-[1200px]">
+            <span className="z-10 self-start text-center font-spartan text-[18px] font-light text-[#D6D6D6]">
+              Call us to book an appointment with your desired service!
+            </span>
           </div>
         </div>
       </div>

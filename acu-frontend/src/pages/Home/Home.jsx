@@ -208,16 +208,6 @@ const Home = () => {
             id="Contact"
           >
             <Contact />
-            <div className="flex w-[80%] items-center justify-center 2xl:w-[1200px]">
-              <span className="z-10 mt-5 text-center font-spartan text-[18px] font-light leading-[23px] text-[#D6D6D6]">
-                Acupuncture and Medical Center can be reached during normal
-                business hours by phone. If you have a medical emergency, please
-                dial 911. If you have questions about our services, accepted
-                forms of insurance, our facility, or our physicians, please feel
-                free to contact us during normal business hours by phone or send
-                us an email and we will respond within one business day.
-              </span>
-            </div>
           </div>
         </div>
 

@@ -6,6 +6,7 @@ import yp from '../../assets/icons/Yelp.svg';
 import ins from '../../assets/icons/Instagram.svg';
 import ml from '../../assets/icons/Mail.svg';
 import Button from '../../shared/components/Button/Button';
+import SubmissionForm from '../SubmissionForm/SubmissionForm';
 
 // TODO: future -- Create this into a more general component
 const Contact = ({ title, body, images }) => {
@@ -16,8 +17,9 @@ const Contact = ({ title, body, images }) => {
       {/* <div className="flex flex-col"> */}
       <div
         id="Contact"
-        className={`relative flex h-auto w-[80%] bg-multi-gradient p-8 hover:bg-opacity-50 hover:[transition:color_0.3s_ease-in-out;] max-2lg:flex-col max-xs:w-full 2lg:w-[1200px] 2lg:rounded-lg`}
+        className={`relative flex-col flex h-auto w-[80%] bg-multi-gradient p-8 hover:bg-opacity-50 hover:[transition:color_0.3s_ease-in-out;] max-2lg:flex-col max-xs:w-full 2lg:w-[1200px] 2lg:rounded-lg`}
       >
+        <div className='flex max-2lg:flex-col'>
         <div className="flex w-full items-center justify-center 2lg:w-1/2">
           <div className="flex flex-col items-center justify-center">
             <h1 className="flex gap-12 font-spartan text-[55px] font-medium tracking-[-3px] drop-shadow-md 2lg:text-[85px]">
@@ -27,29 +29,28 @@ const Contact = ({ title, body, images }) => {
               Tel: (949)-206-1040 • 30212 Tomas, Suite 180
             </span>
             <div className="mt-6 flex w-full items-center justify-center [&_a:not(:first-of-type)]:ml-5">
-              <a href="">
+              <a href='https://www.instagram.com/acupunctureandmedicalcenter/' target="_blank" rel="noopener noreferrer">
                 <img src={ins} className="hover:scale-105"></img>
               </a>
-              <a>
+              <a href='https://www.yelp.com/biz/acupuncture-medical-center-rancho-santa-margarita' target="_blank" rel="noopener noreferrer">
                 <img src={yp} className="hover:scale-105"></img>
               </a>
-              <a>
+              <a href='https://www.facebook.com/acupunctureandmedical/' target="_blank" rel="noopener noreferrer">
                 <img src={fb} className="hover:scale-105"></img>
               </a>
               <a href="mailto:test@gmail.com">
                 <img src={ml} className="hover:scale-105" href=""></img>
               </a>
             </div>
-            <div className="flex items-center justify-center">
+            {/* <div className="flex items-center justify-center">
               <a href="mailto:test@gmail.com">
-                {/* <a href={teamsURL}> */}
                 <Button
                   bordered
                   label="Schedule An Appointment"
                   className="mt-8 bg-[#868686] bg-opacity-50 font-spartan text-[24px] font-light hover:bg-[#434343]"
                 ></Button>
               </a>
-            </div>
+            </div> */}
             <div className="mt-8 flex flex-col items-center justify-center">
               <span className="text-center font-spartan font-medium underline">
                 Hours:
@@ -91,6 +92,24 @@ const Contact = ({ title, body, images }) => {
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
+        </div>
+
+        <div className="flex items-center justify-center mt-10">
+          <span className="z-10 mt-5 text-start font-spartan text-[18px] font-light text-[#D6D6D6]">
+            Acupuncture and Medical Center can be reached during normal
+            business hours by phone. If you have a medical emergency, please
+            dial 911. If you have questions about our services, accepted
+            forms of insurance, our facility, or our physicians, please feel
+            free to contact us during normal business hours by phone or send
+            us an email and we will respond within one business day.
+          </span>
+        </div>
+        
+        <div className='flex flex-col mt-6'>
+          <SubmissionForm/>
+        </div>
+
+       
       </div>
       {/* <div>
           <span className="text-white">test</span>

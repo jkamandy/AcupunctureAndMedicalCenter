@@ -58,11 +58,21 @@ export default {
           from: { height: 'var(--radix-accordion-content-height)' },
           to: { height: '0' },
         },
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        fadeOut: {
+          '0%': { opacity: '1' },
+          '100%': { opacity: '0' },
+        },
       },
       animation: {
         'pulse-down': 'pulse-down 1.5s infinite ease-in-out',
         'slide-down': 'slide-down 300ms ease-out',
         'slide-up': 'slide-up 300ms ease-out',
+        fadeIn: 'fadeIn 0.5s ease forwards',
+        fadeOut: 'fadeOut 0.5s ease forwards',
       },
       rotate: {
         'y-180': 'rotateY(180deg)',

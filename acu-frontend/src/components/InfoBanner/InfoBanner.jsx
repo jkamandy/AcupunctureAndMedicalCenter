@@ -16,7 +16,7 @@ const InfoBanner = ({ title, body, images }) => {
           {/* <span className='leading-[38px] font-spartan text-[48px] flex text-center font-semibold text-[#92BF7C] underline'>{title}</span> */}
           <div className="flex">
             <div className="mt-3 flex flex-col">
-              <span className="mt-5 font-spartan text-[18px] font-light leading-[21px] text-[#D6D6D6] sm:w-[70%] 4xl:text-[20px]">
+              <span className="mt-5 font-spartan text-[18px] font-light leading-[25px] text-[#D6D6D6] sm:w-[70%] 4xl:text-[20px]">
                 Experience the latest in non-invasive pain relief with the
                 Stemwave machine. Using advanced acoustic wave therapy, this
                 innovative technology promotes healing, reduces inflammation,

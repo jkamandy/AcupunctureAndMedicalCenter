@@ -31,8 +31,9 @@ const CardFrame = ({ title, description, bgImage, isFlip, path }) => {
           <div
             style={{
               backgroundImage: `${bgImage ? `url(${bgImage})` : `none`}`,
+              backgroundSize: 'cover'
             }}
-            className={`relative flex h-[360px] items-center justify-center ${!bgImage && 'bg-black'} rounded-none bg-opacity-40 hover:cursor-pointer hover:bg-opacity-50 hover:[transition:color_0.3s_ease-in-out;]`}
+            className={`relative flex h-[380px] items-center justify-center ${!bgImage && 'bg-black'} rounded-none bg-opacity-40 hover:cursor-pointer hover:bg-opacity-50 hover:[transition:color_0.3s_ease-in-out;]`}
             onClick={handleFlip}
           >
             <div className="p-5">
@@ -43,13 +44,11 @@ const CardFrame = ({ title, description, bgImage, isFlip, path }) => {
           </div>
 
           <div
-            className={`relative flex h-[360px] items-start justify-center bg-black bg-opacity-60 hover:cursor-pointer hover:bg-opacity-50 hover:[transition:color_0.3s_ease-in-out;] max-2lg:w-full`}
+            className={`relative flex h-[380px] items-start justify-center bg-black bg-opacity-60 hover:cursor-pointer hover:bg-opacity-50 hover:[transition:color_0.3s_ease-in-out;] max-2lg:w-full`}
             onClick={handleFlip}
           >
             <div className="p-5">
-              <span className="flex self-start text-left font-spartan text-[17px] font-light leading-[21px] text-[#D6D6D6]">
-                {description}
-              </span>
+              <span dangerouslySetInnerHTML={{__html: description}} className="flex self-start flex-col text-left font-spartan text-[17px] font-light leading-[21px] text-[#D6D6D6]"/>
             </div>
           </div>
         </ReactCardFlip>
@@ -57,8 +56,9 @@ const CardFrame = ({ title, description, bgImage, isFlip, path }) => {
         <div
           style={{
             backgroundImage: `${bgImage ? `url(${bgImage})` : `none`}`,
+            backgroundSize: 'cover'
           }}
-          className={`relative flex h-[100px] items-center justify-center max-2lg:w-full 2lg:h-[360px] ${!bgImage && 'bg-black'} rounded-none bg-opacity-40 hover:cursor-pointer hover:bg-opacity-50 hover:[transition:color_0.3s_ease-in-out;]`}
+          className={`relative flex h-[100px] items-center justify-center max-2lg:w-full 2lg:h-[380px] ${!bgImage && 'bg-black'} rounded-none bg-opacity-40 hover:cursor-pointer hover:bg-opacity-50 hover:[transition:color_0.3s_ease-in-out;]`}
           onClick={handleClick}
         >
           <div className="p-5">
