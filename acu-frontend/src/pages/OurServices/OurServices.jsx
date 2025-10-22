@@ -146,7 +146,7 @@ const OurServices = () => {
               isFlip
               cardsInfoFirst={{
                 'StemWave Therapy': [
-                  `TENS (Transcutaneous Electrical Nerve Stimulation) is a therapy that uses a device to deliver low-voltage electrical currents through electrodes placed on the skin. This stimulation targets nerves and muscles to relieve pain, reduce inflammation, and improve circulation. Commonly used for managing chronic pain, muscle rehabilitation, and post-injury recovery, TENS is a non-invasive and drug-free treatment option.`,
+                  `StemWave therapy is a non-invasive treatment that uses sound wave technology to stimulate the body’s natural healing processes, reduce inflammation, and promote tissue regeneration. It's commonly used for chronic pain, soft tissue injuries, and joint conditions without the need for surgery or medication.`,
                   acu4,
                 ],
                 'Laser Therapy': [
@@ -168,10 +168,13 @@ const OurServices = () => {
               }}
             />
           </div>
-          <div className="mt-0 mb-[100px] flex w-[80%] justify-center items-center 2lg:w-[1200px]">
-            <span className="z-10 self-start text-center font-spartan text-[18px] font-light text-[#D6D6D6]">
+          <div className="mt-0 mb-[100px] flex w-[80%] justify-center flex-col justify-center items-center 2lg:w-[1200px]">
+            <span className="z-10 self-start w-full text-center font-spartan text-[18px] font-light text-[#D6D6D6]">
               Call us to book an appointment with your desired service!
             </span>
+            <a href="tel:9492061040" className="text-[#D6D6D6] text-[18px] font-spartan hover:underline">
+              (949) 206-1040
+            </a>
           </div>
         </div>
       </div>

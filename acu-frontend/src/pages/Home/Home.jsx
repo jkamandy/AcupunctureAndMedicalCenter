@@ -106,8 +106,11 @@ const Home = () => {
         >
           <div className="absolute top-24">
             <span className="font-spartan font-light text-[#D6D6D6] drop-shadow-md 4xl:text-[18px]">
-              Rancho Santa Margarita • (949)-206-1040
-            </span>{' '}
+              Rancho Santa Margarita • {' '} 
+              <a href="tel:9492061040" className="text-[#D6D6D6] text-[18px] font-spartan hover:underline">
+                (949) 206-1040
+              </a>
+            </span>
           </div>
           <div className="absolute left-10 flex h-auto flex-col md:left-20 2lg:w-[800px] [&_h1]:leading-[60px] md:[&_h1]:leading-[90px]">
             <div className="relative mt-10">
@@ -136,13 +139,13 @@ const Home = () => {
               </span>
             </div>
             <div className="flex">
-              <a href="mailto:test@gmail.com">
+              <a href="#schedule_appointment">
                 <Button
                   label="Schedule an Appointment"
                   onClick={handleClick}
                   bordered={true} //
                   // className="border-[1px] border-black p-1 m-1"
-                  className="mx-0 mt-5 4xl:text-[20px]"
+                  className="mx-0 mt-5 font-bold"
                 />
               </a>
             </div>
@@ -161,7 +164,7 @@ const Home = () => {
         <div className="flex flex-col justify-start text-[#D6D6D6]">
           {/* ---- Mission Statement + Nav Cards ---- */}
           <div className="relative ml-[20px] mt-[150px] w-[80%] md:ml-[50px] 2lg:w-[1090px]">
-            <span className="font-spartan text-[24px] font-light leading-[27px] text-[#D6D6D6]">
+            <span className="font-spartan text-[20px] 2lg:text-[24px] font-light leading-[27px] text-[#D6D6D6]">
               Our mission is to provide{' '}
               <span className="font-semibold text-[#92BF7C]">personalized</span>
               ,{' '}
@@ -190,7 +193,7 @@ const Home = () => {
 
           <div className="mr-[20px] flex justify-end text-end md:mr-[50px]">
             <div className="relative ml-[50px] w-[80%] 2lg:w-[1090px]">
-              <span className="font-spartan text-[24px] font-light leading-[30px] text-[#D6D6D6]">
+              <span className="font-spartan text-[20px] 2lg:text-[24px] font-light leading-[30px] text-[#D6D6D6]">
                 <span className="font-semibold text-[#92BF7C]">
                   We're here to help!
                 </span>{' '}

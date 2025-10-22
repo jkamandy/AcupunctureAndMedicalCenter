@@ -26,7 +26,9 @@ const Contact = ({ title, body, images }) => {
               Contact Us
             </h1>
             <span className="text-center font-spartan text-[15px] font-light 2lg:text-[18px]">
-              Tel: (949)-206-1040 • 30212 Tomas, Suite 180
+              Tel: <a href="tel:9492061040" className="text-[#D6D6D6] text-[18px] font-spartan hover:underline">
+                (949) 206-1040
+              </a>{' '} • 30212 Tomas, Suite 180
             </span>
             <div className="mt-6 flex w-full items-center justify-center [&_a:not(:first-of-type)]:ml-5">
               <a href='https://www.instagram.com/acupunctureandmedicalcenter/' target="_blank" rel="noopener noreferrer">

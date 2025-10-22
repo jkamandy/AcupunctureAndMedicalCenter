@@ -4,6 +4,7 @@ import AMCbg from '../../assets/acu-bg-sample.svg';
 import AMCbgVideo from '../../assets/videos/bg-video.mp4';
 import Footer from '../../components/Footer/Footer';
 import AppAccordion from '../../components/Accordion/Accordion';
+import Masonry from '../../components/Masonry/Masonry';
 
 const Testimonials = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -77,6 +78,8 @@ const Testimonials = () => {
               wellness journey.
             </span>
           </div>
+
+          <Masonry/>
         </div>
       </div>
 

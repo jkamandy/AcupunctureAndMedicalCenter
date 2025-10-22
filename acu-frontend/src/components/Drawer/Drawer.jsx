@@ -73,18 +73,20 @@ const NavDrawer = ({ links }) => {
         ))}
       </List>
 
-      <div className="mt-[150px] flex w-full flex-col items-center justify-center">
-        <span className="font-spartan font-light text-[#D6D6D6] drop-shadow-md 4xl:text-[18px]">
-          Rancho Santa Margarita • (949)-206-1040
-        </span>{' '}
+      <div className="mt-[100px] flex w-full flex-col items-center justify-center">
+      <span className="text-[#D6D6D6] text-center font-spartan text-[15px] font-light 2lg:text-[18px]">
+              Tel: <a href="tel:9492061040" className="font-semibold text-[#D6D6D6] text-[18px] font-spartan hover:underline">
+                (949) 206-1040
+              </a>{' '} • 30212 Tomas, Suite 180
+            </span>
         <div className="mt-6 flex w-full items-center justify-center [&_a:not(:first-of-type)]:ml-5">
-          <a href="">
+        <a href='https://www.instagram.com/acupunctureandmedicalcenter/' target="_blank" rel="noopener noreferrer">
             <img src={ins} className="hover:scale-105"></img>
           </a>
-          <a>
+          <a href='https://www.yelp.com/biz/acupuncture-medical-center-rancho-santa-margarita' target="_blank" rel="noopener noreferrer">
             <img src={yp} className="hover:scale-105"></img>
           </a>
-          <a>
+          <a href='https://www.facebook.com/acupunctureandmedical/' target="_blank" rel="noopener noreferrer">
             <img src={fb} className="hover:scale-105"></img>
           </a>
           <a href="mailto:test@gmail.com">
@@ -107,6 +109,7 @@ const NavDrawer = ({ links }) => {
         <RxHamburgerMenu className="shadow-lg" />
       </Button>
       <Drawer
+        anchor='right'
         className="font-spartan"
         sx={{
           '& .MuiPaper-root': {

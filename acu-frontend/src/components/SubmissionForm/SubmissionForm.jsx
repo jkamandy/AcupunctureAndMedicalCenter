@@ -5,8 +5,8 @@ export default function SubmissionForm() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    subject: '',
     comments: '',
-    appointment_date: '',
   });
 
   const [error, setError] = useState('');
@@ -46,6 +46,7 @@ export default function SubmissionForm() {
       {!showMessage ? (
         <form
           onSubmit={handleSubmit}
+          id="schedule_appointment"
           className={`rounded-2xl p-6 w-full max-w-xl mx-auto my-10 flex flex-col gap-4
             ${isFadingOut ? 'animate-fadeOut pointer-events-none' : 'opacity-100'}
           `}
