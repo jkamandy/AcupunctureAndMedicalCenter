@@ -118,7 +118,7 @@ const NavDrawer = ({ links }) => {
   );
 
   return (
-    <div>
+    <div className="min-h-[100dvh]">
       <Button
         className="ml-3 bg-black bg-opacity-40 font-spartan text-[24px] text-[#F3F3F3]"
         onClick={toggleDrawer(true)}
