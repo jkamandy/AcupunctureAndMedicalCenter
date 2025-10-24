@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply overflow-x-hidden bg-black bg-opacity-70;
+    @apply bg-white;
   }
   html {
     @apply scroll-smooth;
@@ -12,11 +12,6 @@
 }
 
 /* src/index.css */
-
-#root {
-  min-height: 100dvh;
-  background-color: inherit;
-}
 
 html {
   scroll-behavior: smooth; /* Optional: Adds smooth scrolling behavior */
