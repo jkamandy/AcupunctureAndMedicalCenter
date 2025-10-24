@@ -6,7 +6,6 @@ import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { GrClose } from 'react-icons/gr';
@@ -22,22 +21,26 @@ import ml from '../../assets/icons/Mail.svg';
 
 const NavDrawer = ({ links }) => {
   const [open, setOpen] = React.useState(false);
-  const [activeLink, setActiveLink] = React.useState('');
+  const [drawerHeight, setDrawerHeight] = React.useState(window.innerHeight); // fix
   const location = useLocation();
 
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
   };
 
-  const handleSetActiveLink = (link) => {
-    setActiveLink(link);
-  };
+  // Update drawer height on resize / rotation (iOS Safari safe)
+  React.useEffect(() => {
+    const handleResize = () => setDrawerHeight(window.innerHeight);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const DrawerList = (
     <Box
       className="w-screen sm:w-[640px]"
       role="presentation"
       onClick={toggleDrawer(false)}
+      sx={{ height: drawerHeight, maxHeight: drawerHeight, overflowY: 'auto' }} // fix
     >
       <div className="flex items-center justify-between">
         <img src={AMCbanner} className="w-3/4 scale-90"></img>
@@ -55,12 +58,11 @@ const NavDrawer = ({ links }) => {
           ['Testimonials', '/Testimonials'],
           ['FAQ', '/FAQ'],
           ['Contact', '/Contact'],
-        ].map((text, index) => (
-          <ListItem key={text} disablePadding>
+        ].map((text) => (
+          <ListItem key={text[0]} disablePadding>
             <Link
               to={text[1]}
               className={`${location.pathname === text[1] ? 'w-full bg-[#92BF7C] bg-opacity-20' : ''}`}
-              //   onClick={() => handleSetActiveLink(text[1])}
             >
               <ListItemButton>
                 <ListItemText
@@ -118,7 +120,7 @@ const NavDrawer = ({ links }) => {
   );
 
   return (
-    <div className="min-h-[100dvh]">
+    <div>
       <Button
         className="ml-3 bg-black bg-opacity-40 font-spartan text-[24px] text-[#F3F3F3]"
         onClick={toggleDrawer(true)}
@@ -131,7 +133,8 @@ const NavDrawer = ({ links }) => {
         sx={{
           '& .MuiPaper-root': {
             backgroundColor: '#252525',
-            // opacity: '80%',
+            height: drawerHeight, // fix
+            maxHeight: drawerHeight, // fix
           },
           '& .MuiTypography-root': {
             fontFamily: '"League Spartan", sans-serif',
