@@ -13,6 +13,11 @@
 
 /* src/index.css */
 
+#root {
+  min-height: 100dvh;
+  background-color: inherit;
+}
+
 html {
   scroll-behavior: smooth; /* Optional: Adds smooth scrolling behavior */
 }
