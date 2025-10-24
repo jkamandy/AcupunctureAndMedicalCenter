@@ -74,22 +74,39 @@ const NavDrawer = ({ links }) => {
       </List>
 
       <div className="mt-[100px] flex w-full flex-col items-center justify-center">
-      <span className="text-[#D6D6D6] text-center font-spartan text-[15px] font-light 2lg:text-[18px]">
-              Tel: <a href="tel:9492061040" className="font-semibold text-[#D6D6D6] text-[18px] font-spartan hover:underline">
-                (949) 206-1040
-              </a>{' '} • 30212 Tomas, Suite 180
-            </span>
+        <span className="text-center font-spartan text-[15px] font-light text-[#D6D6D6] 2lg:text-[18px]">
+          Tel:{' '}
+          <a
+            href="tel:9492061040"
+            className="font-spartan text-[18px] font-semibold text-[#D6D6D6] hover:underline"
+          >
+            (949) 206-1040
+          </a>{' '}
+          • 30212 Tomas, Suite 180
+        </span>
         <div className="mt-6 flex w-full items-center justify-center [&_a:not(:first-of-type)]:ml-5">
-        <a href='https://www.instagram.com/acupunctureandmedicalcenter/' target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.instagram.com/acupunctureandmedicalcenter/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={ins} className="hover:scale-105"></img>
           </a>
-          <a href='https://www.yelp.com/biz/acupuncture-medical-center-rancho-santa-margarita' target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.yelp.com/biz/acupuncture-medical-center-rancho-santa-margarita"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={yp} className="hover:scale-105"></img>
           </a>
-          <a href='https://www.facebook.com/acupunctureandmedical/' target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.facebook.com/acupunctureandmedical/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={fb} className="hover:scale-105"></img>
           </a>
-          <a href="mailto:test@gmail.com">
+          <a href="mailto:drmehrg@gmail.com">
             <img src={ml} className="hover:scale-105" href=""></img>
           </a>
         </div>
@@ -109,7 +126,7 @@ const NavDrawer = ({ links }) => {
         <RxHamburgerMenu className="shadow-lg" />
       </Button>
       <Drawer
-        anchor='right'
+        anchor="right"
         className="font-spartan"
         sx={{
           '& .MuiPaper-root': {
