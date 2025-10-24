@@ -124,7 +124,7 @@ const OurServices = () => {
             <CardStack
               isFlip
               cardsInfoFirst={{
-                'Tens Electro Muscle Stimulation': [
+                'TENS Electro Muscle Stimulation': [
                   `TENS (Transcutaneous Electrical Nerve Stimulation) is a therapy that uses a device to deliver low-voltage electrical currents through electrodes placed on the skin. This stimulation targets nerves and muscles to relieve pain, reduce inflammation, and improve circulation. Commonly used for managing chronic pain, muscle rehabilitation, and post-injury recovery, TENS is a non-invasive and drug-free treatment option.`,
                   acu4,
                 ],
@@ -156,7 +156,7 @@ const OurServices = () => {
                   It improves blood circulation and vasodilatation at the injury site. In conjunction with acupuncture recovery is amazingly fast.`,
                   acu5,
                 ],
-                'Telemedicine': [
+                Telemedicine: [
                   `<p>Remote consultations are ideal for individuals who require regular follow-up care for ongoing health conditions, as well as those looking for personalized herbal medicine tailored to their unique needs</p>
                   <br/>
                   <ul>
@@ -168,11 +168,14 @@ const OurServices = () => {
               }}
             />
           </div>
-          <div className="mt-0 mb-[100px] flex w-[80%] justify-center flex-col justify-center items-center 2lg:w-[1200px]">
-            <span className="z-10 self-start w-full text-center font-spartan text-[18px] font-light text-[#D6D6D6]">
+          <div className="mb-[100px] mt-0 flex w-[80%] flex-col items-center justify-center 2lg:w-[1200px]">
+            <span className="z-10 w-full self-start text-center font-spartan text-[18px] font-light text-[#D6D6D6]">
               Call us to book an appointment with your desired service!
             </span>
-            <a href="tel:9492061040" className="text-[#D6D6D6] text-[18px] font-spartan hover:underline">
+            <a
+              href="tel:9492061040"
+              className="font-spartan text-[18px] text-[#D6D6D6] hover:underline"
+            >
               (949) 206-1040
             </a>
           </div>

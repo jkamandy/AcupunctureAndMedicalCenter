@@ -62,7 +62,7 @@ const Home = () => {
 
   const scrollDown = () => {
     window.scrollBy({
-      top: window.innerHeight, // Scroll down by the height of the viewport (100vh)
+      top: window.innerHeight - 0.2 * window.innerHeight,
       behavior: 'smooth', // Smooth scrolling
     });
   };
@@ -89,7 +89,7 @@ const Home = () => {
           src={AMCbg}
         ></img>
       </video>
-      <div className="h-screen w-screen">
+      <div className="h-[100dvh] w-screen">
         <div>
           <Navbar />
         </div>
@@ -98,7 +98,7 @@ const Home = () => {
         <div
           //   className="flex h-screen flex-col items-center justify-center text-[#D6D6D6]"
           ref={ref}
-          className={`flex h-screen flex-col items-center justify-center text-[#D6D6D6] transition-all duration-1000 ${
+          className={`flex h-[100dvh] flex-col items-center justify-center text-[#D6D6D6] transition-all duration-1000 ${
             isPageVisible
               ? 'translate-y-0 opacity-100'
               : 'translate-y-10 opacity-0'
@@ -106,13 +106,16 @@ const Home = () => {
         >
           <div className="absolute top-24">
             <span className="font-spartan font-light text-[#D6D6D6] drop-shadow-md 4xl:text-[18px]">
-              Rancho Santa Margarita • {' '} 
-              <a href="tel:9492061040" className="text-[#D6D6D6] text-[18px] font-spartan hover:underline">
+              Rancho Santa Margarita •{' '}
+              <a
+                href="tel:9492061040"
+                className="font-spartan text-[18px] text-[#D6D6D6] hover:underline"
+              >
                 (949) 206-1040
               </a>
             </span>
           </div>
-          <div className="absolute left-10 flex h-auto flex-col md:left-20 2lg:w-[800px] [&_h1]:leading-[60px] md:[&_h1]:leading-[90px]">
+          <div className="absolute left-[1.5rem] flex h-auto flex-col md:left-20 2lg:w-[800px] [&_h1]:leading-[60px] md:[&_h1]:leading-[90px]">
             <div className="relative mt-10">
               {' '}
               <h1 className="flex gap-12 font-spartan text-[65px] font-medium tracking-[-2px] drop-shadow-md md:text-[85px] md:tracking-[-3px]">
@@ -163,9 +166,12 @@ const Home = () => {
 
         <div className="flex flex-col justify-start text-[#D6D6D6]">
           {/* ---- Mission Statement + Nav Cards ---- */}
-          <div className="relative ml-[20px] mt-[150px] w-[80%] md:ml-[50px] 2lg:w-[1090px]">
-            <span className="font-spartan text-[20px] 2lg:text-[24px] font-light leading-[27px] text-[#D6D6D6]">
-              Our mission is to provide{' '}
+          <div className="relative ml-[20px] mt-[20px] w-[80%] md:ml-[50px] 2lg:w-[1090px]">
+            <span className="font-spartan text-[20px] font-light leading-[27px] text-[#D6D6D6] 2lg:text-[24px]">
+              <span className="text-[60px] font-semibold uppercase leading-none tracking-[-1.8px]">
+                Our mission{' '}
+              </span>{' '}
+              is to provide{' '}
               <span className="font-semibold text-[#92BF7C]">personalized</span>
               ,{' '}
               <span className="font-semibold text-[#92BF7C]">high-quality</span>{' '}
@@ -177,7 +183,7 @@ const Home = () => {
             <CardStack
               // repurposing empty descriptions to store path if the card is not flippable
               cardsInfoFirst={{
-                'Testimonials': ['/Testimonials'],
+                Testimonials: ['/Testimonials'],
                 'Our Services': ['/OurServices'],
                 'Frequently Asked Questions': ['/FAQ'],
                 'About the Team': ['/About'],
@@ -187,13 +193,13 @@ const Home = () => {
 
           {/* ---- StemWave Banner ---- */}
           {/* <About/>  */}
-          <div className="my-[200px] flex">
+          <div className="mb-[150px] mt-[200px] flex">
             <InfoBanner title={'Try Out StemWave!'} />
           </div>
 
           <div className="mr-[20px] flex justify-end text-end md:mr-[50px]">
             <div className="relative ml-[50px] w-[80%] 2lg:w-[1090px]">
-              <span className="font-spartan text-[20px] 2lg:text-[24px] font-light leading-[30px] text-[#D6D6D6]">
+              <span className="font-spartan text-[20px] font-light leading-[30px] text-[#D6D6D6] 2lg:text-[24px]">
                 <span className="font-semibold text-[#92BF7C]">
                   We're here to help!
                 </span>{' '}
