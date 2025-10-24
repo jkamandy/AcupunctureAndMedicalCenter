@@ -1,16 +1,16 @@
-import React from "react";
-import { useEffect, useState } from "react";
+import React from 'react';
+import { useEffect, useState } from 'react';
 // import Button from '../../shared/components/Button/Button';
-import Navbar from "../../components/Navbar/Navbar";
-import AMCLogo from "../../assets/acu-logo.svg";
-import AMCbg from "../../assets/acu-bg-sample.svg";
-import AMCbgVideo from "../../assets/videos/bg-video.mp4";
-import { IoChevronDownSharp } from "react-icons/io5";
-import Footer from "../../components/Footer/Footer";
-import Button from "../../shared/components/Button/Button";
-import CardStack from "../../components/Home/CardStack/CardStack";
-import InfoBanner from "../../components/InfoBanner/InfoBanner";
-import Contact from "../../components/Contact/Contact";
+import Navbar from '../../components/Navbar/Navbar';
+import AMCLogo from '../../assets/acu-logo.svg';
+import AMCbg from '../../assets/acu-bg-sample.svg';
+import AMCbgVideo from '../../assets/videos/bg-video.mp4';
+import { IoChevronDownSharp } from 'react-icons/io5';
+import Footer from '../../components/Footer/Footer';
+import Button from '../../shared/components/Button/Button';
+import CardStack from '../../components/Home/CardStack/CardStack';
+import InfoBanner from '../../components/InfoBanner/InfoBanner';
+import Contact from '../../components/Contact/Contact';
 
 /*
     Notes:
@@ -28,14 +28,14 @@ const About = () => {
       setIsVisible(window.scrollY < 100); // Show chevron when near the top
     };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const scrollDown = () => {
     window.scrollBy({
       top: window.innerHeight, // Scroll down by the height of the viewport (100vh)
-      behavior: "smooth", // Smooth scrolling
+      behavior: 'smooth', // Smooth scrolling
     });
   };
 
@@ -48,7 +48,7 @@ const About = () => {
       {/* <img className={`h-auto w-screen opacity-30 self-center fixed ${isVisible ? "backdrop-blur-sm" : "blur-lg"} transition duration-500 ease-in-out`} src={AMCbg}></img> */}
       {/* TODO: convert the video into its own component */}
       <video
-        className={`fixed left-1/2 top-1/2 min-h-full min-w-full -translate-x-1/2 -translate-y-1/2 transform object-cover opacity-90 blur-lg transition duration-500 ease-in-out ${isVisible ? "backdrop-blur-sm" : "blur-lg"}`}
+        className={`fixed left-1/2 top-1/2 min-h-[100dvh] min-w-full -translate-x-1/2 -translate-y-1/2 transform object-cover opacity-90 blur-lg transition duration-500 ease-in-out ${isVisible ? 'backdrop-blur-sm' : 'blur-lg'}`}
         autoPlay
         muted
         loop
@@ -57,7 +57,7 @@ const About = () => {
         <source src={AMCbgVideo} type="video/mp4" />
         {/* If the video is not supported on certain browsers, the bgImage below will substitute it */}
         <img
-          className={`fixed h-auto w-screen self-center opacity-30 ${isVisible ? "backdrop-blur-sm" : "blur-lg"} transition duration-500 ease-in-out`}
+          className={`fixed h-auto w-screen self-center opacity-30 ${isVisible ? 'backdrop-blur-sm' : 'blur-lg'} transition duration-500 ease-in-out`}
           src={AMCbg}
         ></img>
       </video>
@@ -69,7 +69,7 @@ const About = () => {
 
         <div className="flex h-screen flex-col items-center justify-start text-[#D6D6D6]">
           <div className="mt-[100px]">
-            {" "}
+            {' '}
             <h1 className="flex gap-12 font-spartan text-[85px] font-medium tracking-[-3px] drop-shadow-md">
               Who We Are
             </h1>
