@@ -51,8 +51,9 @@ const Home = () => {
       {/* --- Background Video --- */}
 
       <video
-        className={`fixed inset-0 h-full w-full object-cover transition duration-500 ease-in-out ${!isVisible && 'brightness-50'}`}
-        // className={`fixed left-1/2 top-1/2 min-h-[100dvh] min-w-full -translate-x-1/2 -translate-y-1/2 transform object-cover opacity-90 transition duration-500 ease-in-out ${isVisible ? 'backdrop-blur-sm' : 'blur-lg'}`}
+        className={`fixed left-1/2 top-1/2 min-h-[100svh] min-w-[100vw] -translate-x-1/2 -translate-y-1/2 transform object-cover transition duration-500 ease-in-out ${
+          !isVisible ? 'brightness-50' : 'brightness-100'
+        }`}
         autoPlay
         muted
         loop
@@ -60,7 +61,7 @@ const Home = () => {
       >
         <source src={AMCbgVideo} type="video/mp4" />
         <img
-          className="fixed h-auto w-screen self-center opacity-30"
+          className="absolute inset-0 h-full w-full object-cover opacity-30"
           src={AMCbg}
           alt="Fallback background"
         />
@@ -71,13 +72,13 @@ const Home = () => {
       {/* ✅ Dark overlay (prevents white vignette) */}
 
       {/* --- Main Content --- */}
-      <div className="relative h-[100dvh] w-screen">
+      <div className="relative min-h-[100svh] w-screen">
         <Navbar />
 
         {/* --- Hero Section --- */}
         <div
           ref={ref}
-          className={`flex h-[100dvh] flex-col items-center justify-center text-[#D6D6D6] transition-all duration-1000 ${
+          className={`flex min-h-[100svh] flex-col items-center justify-center text-[#D6D6D6] transition-all duration-1000 ${
             isPageVisible
               ? 'translate-y-0 opacity-100'
               : 'translate-y-10 opacity-0'
