@@ -72,7 +72,7 @@ const ContactPage = () => {
       {/* <img className={`h-auto w-screen opacity-30 self-center fixed ${isVisible ? "backdrop-blur-sm" : "blur-lg"} transition duration-500 ease-in-out`} src={AMCbg}></img> */}
       {/* TODO: convert the video into its own component */}
       <video
-        className={`fixed left-1/2 top-1/2 min-h-full min-w-full -translate-x-1/2 -translate-y-1/2 transform object-cover opacity-90 blur-lg backdrop-blur-sm transition duration-500 ease-in-out`}
+        className={`fixed inset-0 h-full w-full object-cover brightness-50 transition duration-500 ease-in-out`}
         autoPlay
         muted
         loop
@@ -106,12 +106,12 @@ const ContactPage = () => {
             id="Contact"
           >
             <Contact />
-            
+
             <div className="mt-[100px]">
               <img className="scale-100 2lg:scale-125" src={AMCbanner}></img>
             </div>
           </div>
-          
+
           <div className="relative flex">
             <Footer />
           </div>
@@ -135,7 +135,7 @@ const ContactPage = () => {
 
         {/* <div className=' text-[#D6D6D6] flex justify-center items-center'><Testimonals/> </div> */}
       </div>
-      
+
       {/* <Footer /> */}
     </div>
   );

@@ -29,7 +29,7 @@ const Error = () => {
       {/* <img className={`h-auto w-screen opacity-30 self-center fixed ${isVisible ? "backdrop-blur-sm" : "blur-lg"} transition duration-500 ease-in-out`} src={AMCbg}></img> */}
       {/* TODO: convert the video into its own component */}
       <video
-        className={`fixed left-1/2 top-1/2 min-h-full min-w-full -translate-x-1/2 -translate-y-1/2 transform object-cover opacity-90 backdrop-blur-sm transition duration-500 ease-in-out ${isVisible ? 'backdrop-blur-sm' : 'blur-lg'}`}
+        className={`fixed inset-0 h-full w-full object-cover brightness-50 transition duration-500 ease-in-out`}
         autoPlay
         muted
         loop
@@ -53,7 +53,7 @@ const Error = () => {
           <h1 className="font-spartan text-[192px] font-medium uppercase leading-[100px] tracking-[-8px] text-white opacity-70">
             404
           </h1>
-          <span className="mt-3 max-xs:w-[80%] text-center font-spartan text-white opacity-70">
+          <span className="mt-3 text-center font-spartan text-white opacity-70 max-xs:w-[80%]">
             Sorry, the page you are looking for does not exist. Please return to
             the home page.
           </span>

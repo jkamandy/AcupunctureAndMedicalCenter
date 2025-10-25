@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply overflow-x-hidden bg-black bg-opacity-70;
+    @apply overflow-x-hidden bg-transparent;
   }
   html {
     @apply scroll-smooth;
