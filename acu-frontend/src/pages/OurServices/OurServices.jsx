@@ -48,7 +48,7 @@ const OurServices = () => {
     <div className="relative z-0 flex min-h-screen flex-col">
       {/* Background Video */}
       <video
-        className="fixed left-1/2 top-1/2 min-h-full min-w-full -translate-x-1/2 -translate-y-1/2 transform object-cover opacity-90 blur-lg transition duration-500 ease-in-out"
+        className={`fixed inset-0 h-full w-full object-cover brightness-50 transition duration-500 ease-in-out`}
         autoPlay
         muted
         loop
