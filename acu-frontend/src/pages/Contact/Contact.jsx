@@ -71,7 +71,7 @@ const ContactPage = () => {
     <div className="relative z-0 h-auto w-full">
       {/* <img className={`h-auto w-screen opacity-30 self-center fixed ${isVisible ? "backdrop-blur-sm" : "blur-lg"} transition duration-500 ease-in-out`} src={AMCbg}></img> */}
       {/* TODO: convert the video into its own component */}
-      <video
+      {/* <video
         className={`fixed inset-0 h-full w-full object-cover brightness-50 transition duration-500 ease-in-out`}
         autoPlay
         muted
@@ -79,12 +79,12 @@ const ContactPage = () => {
         playsInline
       >
         <source src={AMCbgVideo} type="video/mp4" />
-        {/* If the video is not supported on certain browsers, the bgImage below will substitute it */}
+        
         <img
           className={`fixed h-auto w-screen self-center opacity-30 blur-lg transition duration-500 ease-in-out`}
           src={AMCbg}
         ></img>
-      </video>
+      </video> */}
       <div className="h-auto w-screen">
         <div>
           <Navbar />

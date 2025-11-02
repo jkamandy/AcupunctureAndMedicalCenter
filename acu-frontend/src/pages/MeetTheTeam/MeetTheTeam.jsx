@@ -37,7 +37,7 @@ const MeetTheTeam = () => {
   return (
     <div className="relative z-0 flex min-h-screen flex-col">
       {/* Background Video */}
-      <video
+      {/* <video
         className={`fixed inset-0 h-full w-full object-cover brightness-50 transition duration-500 ease-in-out`}
         autoPlay
         muted
@@ -45,13 +45,13 @@ const MeetTheTeam = () => {
         playsInline
       >
         <source src={AMCbgVideo} type="video/mp4" />
-        {/* Fallback Background Image */}
+        
         <img
           className="fixed h-auto w-screen self-center opacity-30 blur-lg transition duration-500 ease-in-out"
           src={AMCbg}
           alt="Background"
         />
-      </video>
+      </video> */}
 
       {/* Main Content */}
       <div className="flex-grow">

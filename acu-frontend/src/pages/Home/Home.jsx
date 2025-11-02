@@ -50,7 +50,7 @@ const Home = () => {
     <div className="relative z-0 h-auto w-full">
       {/* --- Background Video --- */}
 
-      <video
+      {/* <video
         className={`fixed left-1/2 top-1/2 min-h-[120svh] min-w-[100vw] -translate-x-1/2 -translate-y-1/2 transform object-cover transition duration-500 ease-in-out ${
           !isVisible ? 'brightness-50' : 'brightness-100'
         }`}
@@ -65,7 +65,7 @@ const Home = () => {
           src={AMCbg}
           alt="Fallback background"
         />
-      </video>
+      </video> */}
 
       {/* <div className="pointer-events-none fixed inset-0 z-[1] bg-black/20" /> */}
 
