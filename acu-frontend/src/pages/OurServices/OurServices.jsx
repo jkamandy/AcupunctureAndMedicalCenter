@@ -154,7 +154,7 @@ const OurServices = () => {
                   used to treat a wide variety of pain syndromes, injuries, wounds, fractures, 
                   neurological conditions and pathologies. Fractures and wounds are found to heal 60% faster reducing the overall cost of treatments. It provides an anti-inflammatory, anti -edematous effect and acts as a natural pain analgesic.
                   It improves blood circulation and vasodilatation at the injury site. In conjunction with acupuncture recovery is amazingly fast.`,
-                  acu5,
+                  acu2,
                 ],
                 Telemedicine: [
                   `<p>Remote consultations are ideal for individuals who require regular follow-up care for ongoing health conditions, as well as those looking for personalized herbal medicine tailored to their unique needs</p>

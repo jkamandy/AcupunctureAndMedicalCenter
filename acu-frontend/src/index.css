@@ -4,17 +4,27 @@
 
 @layer base {
   body {
-    @apply overflow-x-hidden;
+    @apply z-[3000] overflow-x-hidden bg-black;
   }
   html {
     @apply scroll-smooth;
   }
 }
 
+/* :root {
+  --app-height: 100dvh;
+} */
+
+:root {
+  /* --vh: 1vh; */
+}
+
 /* src/index.css */
 
 html {
   scroll-behavior: smooth; /* Optional: Adds smooth scrolling behavior */
+  padding-top: '100px';
+  padding-bottom: '100px';
 }
 
 /* Custom scrollbar styles */
