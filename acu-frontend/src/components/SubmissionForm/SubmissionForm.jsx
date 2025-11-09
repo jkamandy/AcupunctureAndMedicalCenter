@@ -14,7 +14,7 @@ export default function SubmissionForm() {
   const [showMessage, setShowMessage] = useState(false); // to show thank you message
 
   const handleChange = (e) => {
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
       [e.target.name]: e.target.value,
     }));
@@ -34,24 +34,28 @@ export default function SubmissionForm() {
       setTimeout(() => {
         setShowMessage(true);
         setIsFadingOut(false);
-        setFormData({ name: '', email: '', comments: '', appointment_date: '' });
+        setFormData({
+          name: '',
+          email: '',
+          comments: '',
+          appointment_date: '',
+        });
       }, 500); // match animation duration
     }
   };
 
-  const isFormIncomplete = !formData.name || !formData.email || !formData.comments;
+  const isFormIncomplete =
+    !formData.name || !formData.email || !formData.comments;
 
   return (
-    <div className='flex min-h-[400px] justify-center'>
+    <div className="flex min-h-[400px] justify-center">
       {!showMessage ? (
         <form
           onSubmit={handleSubmit}
           id="schedule_appointment"
-          className={`rounded-2xl p-6 w-full max-w-xl mx-auto my-10 flex flex-col gap-4
-            ${isFadingOut ? 'animate-fadeOut pointer-events-none' : 'opacity-100'}
-          `}
+          className={`mx-auto my-10 flex w-full max-w-xl flex-col gap-4 rounded-2xl p-6 ${isFadingOut ? 'pointer-events-none animate-fadeOut' : 'opacity-100'} `}
         >
-          <h2 className="text-[#D6D6D6] font-spartan text-start text-[25px]">
+          <h2 className="text-start font-spartan text-[25px] text-[#D6D6D6]">
             Schedule an Appointment
           </h2>
 
@@ -61,7 +65,7 @@ export default function SubmissionForm() {
             onChange={handleChange}
             placeholder="Name"
             required
-            className="px-4 py-2 rounded-lg border border-gray-300 bg-white/80 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-400 transition"
+            className="rounded-lg border border-gray-300 bg-white/80 px-4 py-2 text-gray-800 placeholder-gray-500 transition focus:outline-none focus:ring-2 focus:ring-indigo-400"
           />
 
           <input
@@ -71,18 +75,18 @@ export default function SubmissionForm() {
             onChange={handleChange}
             placeholder="Email"
             required
-            className="px-4 py-2 rounded-lg border border-gray-300 bg-white/80 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-400 transition"
+            className="rounded-lg border border-gray-300 bg-white/80 px-4 py-2 text-gray-800 placeholder-gray-500 transition focus:outline-none focus:ring-2 focus:ring-indigo-400"
           />
 
-        <textarea
+          <textarea
             name="subject"
             value={formData.subject}
             onChange={handleChange}
             placeholder="Subject"
             required
             rows={1}
-            className="px-4 py-2 rounded-lg border border-gray-300 bg-white/80 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-400 resize-none transition"
-          />        
+            className="resize-none rounded-lg border border-gray-300 bg-white/80 px-4 py-2 text-gray-800 placeholder-gray-500 transition focus:outline-none focus:ring-2 focus:ring-indigo-400"
+          />
 
           <textarea
             name="comments"
@@ -90,7 +94,7 @@ export default function SubmissionForm() {
             onChange={handleChange}
             placeholder="Comments"
             rows={3}
-            className="px-4 py-2 rounded-lg border border-gray-300 bg-white/80 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-400 resize-none transition"
+            className="resize-none rounded-lg border border-gray-300 bg-white/80 px-4 py-2 text-gray-800 placeholder-gray-500 transition focus:outline-none focus:ring-2 focus:ring-indigo-400"
           />
 
           {/* <input
@@ -104,20 +108,22 @@ export default function SubmissionForm() {
           <button
             type="submit"
             disabled={isFormIncomplete}
-            className={`bg-[#85AE71] hover:bg-[#92BF7C] font-spartan text-white font-medium py-2 rounded-lg shadow-md transition duration-200 ${isFormIncomplete && 'opacity-50 cursor-not-allowed hover:bg-[#85AE71]'}`}
+            className={`rounded-lg bg-[#85AE71] py-2 font-spartan font-medium text-white shadow-md transition duration-200 hover:bg-[#92BF7C] ${isFormIncomplete && 'cursor-not-allowed opacity-50 hover:bg-[#85AE71]'}`}
           >
             Submit
           </button>
 
           {error && (
-            <p className="text-red-600 mt-2 text-sm font-medium">{error}</p>
+            <p className="mt-2 text-sm font-medium text-red-600">{error}</p>
           )}
         </form>
       ) : (
-        <div className="flex justify-center  animate-fadeIn">
-          <div className="flex flex-col justify-center items-center p-6">
+        <div className="flex animate-fadeIn justify-center">
+          <div className="flex flex-col items-center justify-center p-6">
             <span className="font-spartan text-[30px]">Thank you!</span>
-            <span className="font-spartan text-[16px]">We'll reach out to you in the next 24 hours.</span>
+            <span className="text-center font-spartan text-[16px]">
+              We'll reach out to you in the next 24 hours.
+            </span>
           </div>
         </div>
       )}
