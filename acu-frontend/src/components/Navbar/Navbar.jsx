@@ -35,28 +35,44 @@ const Navbar = () => {
     <>
       {/* DESKTOP NAVBAR */}
       <div
-        className={`fixed z-20 hidden h-[80px] w-full items-center justify-between bg-[#F3F3F3] px-12 py-4 drop-shadow-lg 2lg:flex transition-all duration-500 ease-in-out ${
+        className={`fixed z-20 hidden h-[80px] w-full items-center justify-between bg-[#F3F3F3] px-12 py-4 drop-shadow-lg transition-all duration-500 ease-in-out 2lg:flex ${
           hideNavbar && !isMobile
-            ? '-translate-y-full opacity-0 pointer-events-none'
+            ? 'pointer-events-none -translate-y-full opacity-0'
             : 'translate-y-0 opacity-100'
         }`}
       >
         <div className="w-[300px]">
           <Link to="/">
-            <img className="h-[50px] w-auto" src={AMCBanner} alt="AMC Banner" />
+            <img className="h-[75px] w-auto" src={AMCBanner} alt="AMC Banner" />
           </Link>
         </div>
 
         <div className="flex items-center">
-          <Link to="/"><Button className="mx-2" label="Home" /></Link>
-          <Link to="/About"><Button className="mx-2" label="About" /></Link>
-          <Link to="/OurServices"><Button className="mx-2" label="Services" /></Link>
-          <Link to="/Testimonials"><Button className="mx-2" label="Testimonials" /></Link>
-          <Link to="/FAQ"><Button className="mx-2" label="FAQ" /></Link>
-          <Link to="/Contact"><Button className="mx-2" label="Contact" /></Link>
+          <Link to="/">
+            <Button className="mx-2" label="Home" />
+          </Link>
+          <Link to="/About">
+            <Button className="mx-2" label="About" />
+          </Link>
+          <Link to="/OurServices">
+            <Button className="mx-2" label="Services" />
+          </Link>
+          <Link to="/Testimonials">
+            <Button className="mx-2" label="Testimonials" />
+          </Link>
+          <Link to="/FAQ">
+            <Button className="mx-2" label="FAQ" />
+          </Link>
+          <Link to="/Contact">
+            <Button className="mx-2" label="Contact" />
+          </Link>
           <div className="flex flex-col items-center justify-center">
             <Link to="/Contact">
-              <Button className="mx-2" label="Schedule an Appointment" bordered />
+              <Button
+                className="mx-2"
+                label="Schedule an Appointment"
+                bordered
+              />
             </Link>
           </div>
         </div>
@@ -64,10 +80,10 @@ const Navbar = () => {
 
       {/* NAVDRAWER */}
       <div
-        className={`fixed top-5 right-5 z-30 text-[24px] text-[#333] transition-all duration-500 ease-in-out ${
+        className={`fixed right-5 top-5 z-30 text-[24px] text-[#333] transition-all duration-500 ease-in-out ${
           isMobile || hideNavbar
-            ? 'opacity-100 translate-y-0 pointer-events-auto'
-            : 'opacity-0 -translate-y-2 pointer-events-none'
+            ? 'pointer-events-auto translate-y-0 opacity-100'
+            : 'pointer-events-none -translate-y-2 opacity-0'
         }`}
       >
         <NavDrawer />

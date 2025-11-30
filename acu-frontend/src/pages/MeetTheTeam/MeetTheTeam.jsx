@@ -68,8 +68,8 @@ const MeetTheTeam = () => {
               Who We Are
             </h1>
           </div>
-          <div className="mb-[100px] mt-2 flex w-[80%] flex-col items-center xl:w-[1200px] [&_span:not(:first-of-type)]:mt-5">
-            <span className="z-10 self-start font-spartan text-[18px] font-light text-[#D6D6D6]">
+          <div className="mb-[100px] mt-2 flex w-[80%] flex-col items-center rounded-lg bg-black bg-opacity-50 p-4 font-light xl:w-[1200px] [&_span:not(:first-of-type)]:mt-5">
+            <span className="z-10 self-start font-spartan text-[18px] text-[#D6D6D6]">
               Acupuncture and Medical Center's mission is to provide
               personalized, high-quality care on an as-needed or preventative
               basis. We have created a practice that we believe in and choose
@@ -82,7 +82,7 @@ const MeetTheTeam = () => {
               and herbal counseling, massage therapy, physiotherapy, and patient
               education.
             </span>
-            <span className="z-10 self-start font-spartan text-[18px] font-light text-[#D6D6D6]">
+            <span className="z-10 self-start font-spartan text-[18px] text-[#D6D6D6]">
               We are a full-service family practice of dedicated, experienced
               physicians who believe in working with our patients to maintain
               and improve their health. We work together to serve your entire
@@ -92,7 +92,7 @@ const MeetTheTeam = () => {
               in educating our patients as we work with them to achieve the best
               physical state possible.
             </span>
-            <span className="z-10 self-start font-spartan text-[18px] font-light text-[#D6D6D6]">
+            <span className="z-10 self-start font-spartan text-[18px] text-[#D6D6D6]">
               At Acupuncture and Medical Center, we understand the concerns and
               requirements of the modern medical consumer. We know that you are
               sophisticated and well-informed, and we believe that you have a
@@ -102,7 +102,7 @@ const MeetTheTeam = () => {
               medical professionals to offer a wide range of personally tailored
               services in order to accommodate all your health needs.
             </span>
-            <span className="z-10 self-start font-spartan text-[18px] font-light text-[#D6D6D6]">
+            <span className="z-10 self-start font-spartan text-[18px] text-[#D6D6D6]">
               Our personal belief is in the satisfaction and gratification of
               knowing that we were able to restore happiness and well-being in
               another person. Our biggest achievement and fulfillment in life is

@@ -115,7 +115,10 @@ const NavDrawer = ({ links }) => {
           >
             (949) 206-1040
           </a>{' '}
-          • 30212 Tomas, Suite 180
+          <div className="mt-3 flex flex-col">
+            <span>30212 Tomas, Suite 180</span>
+            <span>Rancho Santa Margarita, CA 92688</span>
+          </div>
         </span>
 
         <div className="mt-6 flex w-full items-center justify-center [&_a:not(:first-of-type)]:ml-5">
@@ -145,9 +148,9 @@ const NavDrawer = ({ links }) => {
           </a>
         </div>
 
-        <div className="mt-[50px]">
+        {/* <div className="mt-[50px]">
           <img src={AMClogo} />
-        </div>
+        </div> */}
       </div>
     </Box>
   );
