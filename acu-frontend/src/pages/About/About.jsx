@@ -74,8 +74,8 @@ const About = () => {
               Who We Are
             </h1>
           </div>
-          <div className="relative flex w-[1090px] flex-col">
-            <span className="font-spartan text-[20px] font-light leading-[24px] text-[#D6D6D6]">
+          <div className="relative flex w-[1090px] flex-col font-normal">
+            <span className="font-spartan text-[20px] leading-[24px] text-[#D6D6D6]">
               Acupuncture and Medical Center's mission is to provide
               personalized, high-quality care on an as-needed or preventative
               basis.  We have created a practice that we believe in and choose
@@ -88,7 +88,7 @@ const About = () => {
               and herbal counseling, massage therapy, physio-therapy, and
               patient education.​
             </span>
-            <span className="mt-10 text-right font-spartan text-[20px] font-light leading-[24px] text-[#D6D6D6]">
+            <span className="mt-10 text-right font-spartan text-[20px] leading-[24px] text-[#D6D6D6]">
               We are a full-service family practice of dedicated, experienced
               physicians who believe in working with our patients to maintain
               and improve their health. We work together to serve your entire
@@ -106,7 +106,7 @@ const About = () => {
               range of personally tailored service in order to accommodate all
               your health needs.
             </span>
-            <span className="mt-10 font-spartan text-[20px] font-light leading-[24px] text-[#D6D6D6]">
+            <span className="mt-10 font-spartan text-[20px] leading-[24px] text-[#D6D6D6]">
               Our personal belief is in the satisfaction and gratification of
               knowing that we were able to restored happiness and well being in
               another person. Our biggest achievement and fulfillment in life is

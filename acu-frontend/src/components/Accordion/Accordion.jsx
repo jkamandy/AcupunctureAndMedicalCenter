@@ -36,7 +36,7 @@ const AppAccordion = ({}) => {
     >
       <Accordion.Root type="single" collapsible className="z-10 w-full">
         <AccordionItem value="item1" header="How does acupuncture work?">
-          <div className="flex flex-col [&_span:not(:first-of-type)]:mt-5">
+          <div className="flex flex-col rounded-lg bg-black bg-opacity-50 p-4 [&_span:not(:first-of-type)]:mt-5">
             <span>
               Several processes have been proposed to explain acupuncture’s
               effects, primarily on pain. Acupuncture points are believed to
@@ -81,7 +81,7 @@ const AppAccordion = ({}) => {
           header="What can acupuncture help with? "
           className="mt-3"
         >
-          <div className="flex flex-col [&_span:not(:first-of-type)]:mt-5">
+          <div className="flex flex-col rounded-lg bg-black bg-opacity-50 p-4 [&_span:not(:first-of-type)]:mt-5">
             <span>
               Many promising results have emerged. Currently, one of the main
               reasons that most people seek acupuncture treatments is for
@@ -115,7 +115,7 @@ const AppAccordion = ({}) => {
           value="item3"
           header="What conditions can acupuncture and herbal medicine treat?"
         >
-          <div className="flex flex-col [&_span:not(:first-of-type)]:mt-5">
+          <div className="flex flex-col rounded-lg bg-black bg-opacity-50 p-4 [&_span:not(:first-of-type)]:mt-5">
             <span>
               Acupuncture and herbal medicine can effectively treat a wide range
               of conditions, including:
@@ -154,7 +154,7 @@ const AppAccordion = ({}) => {
           header="How can acupuncture help with pain management?"
           className="mt-3"
         >
-          <div className="flex flex-col [&_span:not(:first-of-type)]:mt-5">
+          <div className="flex flex-col rounded-lg bg-black bg-opacity-50 p-4 [&_span:not(:first-of-type)]:mt-5">
             <span>
               Acupuncture helps manage various types of pain, including back,
               neck, shoulder, and knee pain, as well as arthritis, sciatica,
@@ -170,7 +170,7 @@ const AppAccordion = ({}) => {
           header="Can acupuncture help with emotional and psychological health issues?"
           className="mt-3"
         >
-          <div className="flex flex-col [&_span:not(:first-of-type)]:mt-5">
+          <div className="flex flex-col rounded-lg bg-black bg-opacity-50 p-4 [&_span:not(:first-of-type)]:mt-5">
             <span>
               Yes, acupuncture is often used to treat emotional and
               psychological conditions like anxiety, depression, insomnia, and
@@ -185,7 +185,7 @@ const AppAccordion = ({}) => {
           header="What to expect after a treatment?"
           className="mt-3"
         >
-          <div className="flex flex-col [&_span:not(:first-of-type)]:mt-5">
+          <div className="flex flex-col rounded-lg bg-black bg-opacity-50 p-4 [&_span:not(:first-of-type)]:mt-5">
             <span>
               One may experiance an immediate total or partial relief of pain or
               other sysmptoms. This relief may be permanent or may last for some
@@ -203,7 +203,7 @@ const AppAccordion = ({}) => {
           header="What is herbal therapy?"
           className="mt-3"
         >
-          <div className="flex flex-col [&_span:not(:first-of-type)]:mt-5">
+          <div className="flex flex-col rounded-lg bg-black bg-opacity-50 p-4 [&_span:not(:first-of-type)]:mt-5">
             <span>
               For over three thousand years, healers has recognized the
               theraputic value of herbs. Herbal therapy has traditionally been
@@ -227,7 +227,7 @@ const AppAccordion = ({}) => {
           header="How does massage therapy work?"
           className="mt-3"
         >
-          <div className="flex flex-col [&_span:not(:first-of-type)]:mt-5">
+          <div className="flex flex-col rounded-lg bg-black bg-opacity-50 p-4 [&_span:not(:first-of-type)]:mt-5">
             <span>
               The stressful influences of everyday life can have serious health
               consequences. It is imperative that individuals learn to relax and
@@ -244,7 +244,7 @@ const AppAccordion = ({}) => {
           header="Is acupuncture covered by insurance?"
           className="mt-3"
         >
-          <div className="flex flex-col [&_span:not(:first-of-type)]:mt-5">
+          <div className="flex flex-col rounded-lg bg-black bg-opacity-50 p-4 [&_span:not(:first-of-type)]:mt-5">
             <span>
               Our staff is trained to verify and obtain pre-authorizations for
               your therapy. Most insurance companies cover acupuncture therapy.
@@ -266,7 +266,7 @@ const AppAccordion = ({}) => {
           header="Does acupuncture hurt?"
           className="mt-3"
         >
-          <div className="flex flex-col [&_span:not(:first-of-type)]:mt-5">
+          <div className="flex flex-col rounded-lg bg-black bg-opacity-50 p-4 [&_span:not(:first-of-type)]:mt-5">
             <span>
               Acupunture is the most non-invasive modalatiy in health care
               industry. Acupuncture is safe and painless. However, we are
