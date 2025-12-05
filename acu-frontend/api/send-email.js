@@ -18,14 +18,16 @@ export default async function handler(req, res) {
     const notifyMsg = {
       to: process.env.SENDGRID_TO, // your email
       from: process.env.SENDGRID_FROM, // no-reply@yourdomain.com
-      subject: `New Contact Form Submission from ${name}`,
+      subject: `Online Form Submission:  ${name} - ${subject}`,
       text: `
-            Name: ${name}
-            Email: ${email}
-            Subject: ${subject}
-            Comments:
-            ${comments}
-        `,
+Name: ${name}
+
+Email: ${email}
+
+Subject: ${subject}
+
+Comments:
+${comments}`,
     };
 
     // 2️⃣ Confirmation email to the USER
