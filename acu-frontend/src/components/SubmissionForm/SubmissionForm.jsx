@@ -27,8 +27,15 @@ export default function SubmissionForm() {
 
     if (error) {
       setError('Something went wrong. Please try again.');
+      console.error(error);
     } else {
       setIsFadingOut(true);
+
+      await fetch('/api/send-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
 
       // Wait for fadeOut animation to finish before showing thank you
       setTimeout(() => {
