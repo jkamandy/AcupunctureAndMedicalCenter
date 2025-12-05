@@ -37,12 +37,12 @@ ${comments}`,
       subject: 'Thank you for contacting us!',
       html: `
         <div style="font-family: Arial; font-size: 16px;">
-          <p>Hi ${name},</p>
-          <p>Thank you for reaching out. We have received your message:</p>
-          <blockquote>${comments}</blockquote>
-          <p>We will respond within 24 hours.</p>
-          <br/>
-          <p>— Acupuncture & Medical Center</p>
+            <p>Hi ${name},</p>
+            <p>Thank you for reaching out. We have received your message:</p>
+            <blockquote>${comments}</blockquote>
+            <p>We will respond within 24 hours.</p>
+            <br/>
+            <p>— Acupuncture & Medical Center</p>
         </div>
       `,
     };
