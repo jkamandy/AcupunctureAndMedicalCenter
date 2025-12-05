@@ -9,7 +9,7 @@ const InfoBanner = ({ title, body, images }) => {
   return (
     <>
       <div
-        className={`relative py-20 flex flex-col items-start justify-start bg-multi-gradient px-8 hover:bg-opacity-50 hover:[transition:color_0.3s_ease-in-out;] 2lg:w-[80%] 2lg:rounded-br-xl 2lg:rounded-tr-xl`}
+        className={`relative flex flex-col items-start justify-start bg-multi-gradient px-8 py-20 hover:bg-opacity-50 hover:[transition:color_0.3s_ease-in-out;] 2lg:w-[80%] 2lg:rounded-br-xl 2lg:rounded-tr-xl`}
       >
         <div className="flex-col justify-start py-8">
           <img className="flex max-md:scale-75" src={swImg}></img>
@@ -32,7 +32,11 @@ const InfoBanner = ({ title, body, images }) => {
                   </span>{' '}
                   and ask about our introductory offer!
                 </span>
-                <a href="https://stemwave.com/our-technology/">
+                <a
+                  href="https://stemwave.com/our-technology/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Button
                     standard
                     // url="https://stemwave.com/our-technology/"
