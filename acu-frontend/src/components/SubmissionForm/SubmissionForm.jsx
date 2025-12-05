@@ -7,6 +7,7 @@ export default function SubmissionForm() {
     email: '',
     subject: '',
     comments: '',
+    phone: '',
   });
 
   const [error, setError] = useState('');
@@ -14,9 +15,17 @@ export default function SubmissionForm() {
   const [showMessage, setShowMessage] = useState(false); // to show thank you message
 
   const handleChange = (e) => {
+    let { name, value } = e.target;
+
+    // Apply phone validation only for the phone field
+    if (name === 'phone') {
+      // Allow only numbers, spaces, parentheses, hyphens, and +
+      value = value.replace(/[^0-9+\-\(\)\s]/g, '');
+    }
+
     setFormData((prev) => ({
       ...prev,
-      [e.target.name]: e.target.value,
+      [name]: value,
     }));
   };
 
@@ -46,13 +55,14 @@ export default function SubmissionForm() {
           email: '',
           comments: '',
           appointment_date: '',
+          phone: '',
         });
       }, 500); // match animation duration
     }
   };
 
   const isFormIncomplete =
-    !formData.name || !formData.email || !formData.comments;
+    !formData.name || !formData.email || !formData.comments || !formData.phone;
 
   return (
     <div className="flex min-h-[400px] justify-center">
@@ -82,6 +92,18 @@ export default function SubmissionForm() {
             onChange={handleChange}
             placeholder="Email"
             required
+            className="rounded-lg border border-gray-300 bg-white/80 px-4 py-2 text-gray-800 placeholder-gray-500 transition focus:outline-none focus:ring-2 focus:ring-indigo-400"
+          />
+
+          <input
+            name="phone"
+            type="tel"
+            value={formData.phone}
+            onChange={handleChange}
+            placeholder="Phone Number"
+            required
+            pattern="^[0-9\-\+\(\)\s]{10,}$"
+            title="Please enter a valid phone number (at least 10 digits)."
             className="rounded-lg border border-gray-300 bg-white/80 px-4 py-2 text-gray-800 placeholder-gray-500 transition focus:outline-none focus:ring-2 focus:ring-indigo-400"
           />
 
