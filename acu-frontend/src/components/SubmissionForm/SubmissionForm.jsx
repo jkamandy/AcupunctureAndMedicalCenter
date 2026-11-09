@@ -70,7 +70,7 @@ export default function SubmissionForm() {
         <form
           onSubmit={handleSubmit}
           id="schedule_appointment"
-          className={`mx-auto my-10 flex w-full max-w-xl flex-col gap-4 rounded-2xl p-6 ${isFadingOut ? 'pointer-events-none animate-fadeOut' : 'opacity-100'} `}
+          className={`mx-auto my-10 flex w-full max-w-xl flex-col gap-4 rounded-2xl px-0 py-6 sm:p-6 ${isFadingOut ? 'pointer-events-none animate-fadeOut' : 'opacity-100'} `}
         >
           <h2 className="text-start font-spartan text-[25px] text-[#D6D6D6]">
             Schedule an Appointment

@@ -42,7 +42,7 @@ const Error = () => {
           src={AMCbg}
         ></img>
       </video> */}
-      <div className="flex h-screen w-screen flex-col items-center justify-center">
+      <div className="flex min-h-[100svh] w-full flex-col items-center justify-center px-6">
         {/* <div>
           <Navbar />
         </div> */}
@@ -50,7 +50,7 @@ const Error = () => {
 
         {/* <div className="items-center justify-center"> */}
         <div className="flex flex-col items-center justify-center">
-          <h1 className="font-spartan text-[192px] font-medium uppercase leading-[100px] tracking-[-8px] text-white opacity-70">
+          <h1 className="font-spartan text-[clamp(120px,40vw,192px)] font-medium uppercase leading-[100px] tracking-[-8px] text-white opacity-70">
             404
           </h1>
           <span className="mt-3 text-center font-spartan text-white opacity-70 max-xs:w-[80%]">

@@ -65,7 +65,7 @@ const FAQ = () => {
                 : 'translate-y-10 opacity-0'
             }`}
           >
-            <h1 className="flex gap-12 font-spartan text-[35px] font-medium tracking-[-1px] drop-shadow-md max-2xs:text-[30px] xs:text-[55px] md:text-[75px] md:tracking-[-3px]">
+            <h1 className="px-4 text-center font-spartan text-[clamp(32px,9vw,75px)] font-medium leading-tight tracking-[-1px] drop-shadow-md md:tracking-[-3px]">
               Frequently Asked Questions
             </h1>
           </div>

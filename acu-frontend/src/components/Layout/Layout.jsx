@@ -21,13 +21,8 @@ export default function Layout({ children }) {
 
     const playPromise = video.play();
     if (playPromise !== undefined) {
-      playPromise
-        .then(() => {
-          setCanAutoplay(true);
-        })
-        .catch(() => {
-          setCanAutoplay(false); // autoplay blocked
-        });
+      // Autoplay can be blocked (e.g. low-power mode); the page still works without it
+      playPromise.catch(() => {});
     }
   }, []);
 

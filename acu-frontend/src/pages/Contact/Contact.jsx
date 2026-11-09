@@ -85,7 +85,7 @@ const ContactPage = () => {
           src={AMCbg}
         ></img>
       </video> */}
-      <div className="h-auto w-screen">
+      <div className="h-auto w-full">
         <div>
           <Navbar />
         </div>
@@ -94,7 +94,7 @@ const ContactPage = () => {
         <div
           //   className="flex h-screen flex-col items-center justify-center text-[#D6D6D6]"
           ref={ref}
-          className={`flex h-screen flex-col items-center justify-between text-[#D6D6D6] transition-all duration-1000 ${
+          className={`flex min-h-screen flex-col items-center justify-between text-[#D6D6D6] transition-all duration-1000 ${
             isPageVisible
               ? 'translate-y-0 opacity-100'
               : 'translate-y-10 opacity-0'
@@ -102,17 +102,21 @@ const ContactPage = () => {
         >
           {/* ---- Contact ---- */}
           <div
-            className="mb-[100px] flex w-full flex-col items-center justify-center md:mt-[150px]"
+            className="mb-[60px] mt-[90px] flex w-full flex-col items-center justify-center md:mb-[100px] md:mt-[150px]"
             id="Contact"
           >
             <Contact />
 
-            <div className="mt-[100px]">
-              <img className="scale-100 2lg:scale-125" src={AMCbanner}></img>
+            <div className="mt-[60px] px-6 md:mt-[100px]">
+              <img
+                className="scale-100 2lg:scale-125"
+                src={AMCbanner}
+                alt="Acupuncture and Medical Center"
+              />
             </div>
           </div>
 
-          <div className="relative flex">
+          <div className="relative flex w-full">
             <Footer />
           </div>
         </div>
