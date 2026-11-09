@@ -1,6 +1,6 @@
-import sgMail from '@sendgrid/mail';
+import { Resend } from 'resend';
 
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -16,8 +16,8 @@ export default async function handler(req, res) {
 
     // 1️⃣ Email to YOU
     const notifyMsg = {
-      to: process.env.SENDGRID_TO, // your email
-      from: process.env.SENDGRID_FROM, // no-reply@yourdomain.com
+      to: process.env.RESEND_TO, // your email
+      from: process.env.RESEND_FROM, // e.g. Acupuncture & Medical Center <no-reply@yourdomain.com>
       subject: `Online Form Submission:  ${name} - ${subject}`,
       text: `
 Name: ${name}
@@ -35,7 +35,7 @@ ${comments}`,
     // 2️⃣ Confirmation email to the USER
     const confirmMsg = {
       to: email,
-      from: process.env.SENDGRID_FROM,
+      from: process.env.RESEND_FROM,
       subject: 'Thank you for contacting us!',
       html: `
         <div style="font-family: Arial; font-size: 16px;">
@@ -49,12 +49,16 @@ ${comments}`,
       `,
     };
 
-    await sgMail.send(notifyMsg);
-    await sgMail.send(confirmMsg);
+    // Resend returns { data, error } instead of throwing, so check each result
+    const notifyResult = await resend.emails.send(notifyMsg);
+    if (notifyResult.error) throw notifyResult.error;
+
+    const confirmResult = await resend.emails.send(confirmMsg);
+    if (confirmResult.error) throw confirmResult.error;
 
     return res.status(200).json({ success: true });
   } catch (err) {
-    console.error('SendGrid Error:', err);
+    console.error('Resend Error:', err);
     return res.status(500).json({ error: 'Failed to send email.' });
   }
 }
