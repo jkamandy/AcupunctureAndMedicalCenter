@@ -17,12 +17,12 @@ const Contact = ({ title, body, images }) => {
       {/* <div className="flex flex-col"> */}
       <div
         id="Contact"
-        className={`relative flex h-auto w-[80%] flex-col bg-multi-gradient p-8 hover:bg-opacity-50 hover:[transition:color_0.3s_ease-in-out;] max-2lg:flex-col max-xs:w-full 2lg:w-[1200px] 2lg:rounded-lg`}
+        className={`relative flex h-auto w-[80%] flex-col bg-multi-gradient p-5 hover:bg-opacity-50 hover:[transition:color_0.3s_ease-in-out;] max-2lg:flex-col max-xs:w-full sm:p-8 2lg:w-[1200px] 2lg:rounded-lg`}
       >
         <div className="flex max-2lg:flex-col">
           <div className="flex w-full items-center justify-center 2lg:w-1/2">
             <div className="flex flex-col items-center justify-center">
-              <h1 className="flex gap-12 font-spartan text-[55px] font-medium tracking-[-3px] drop-shadow-md 2lg:text-[85px]">
+              <h1 className="flex gap-12 font-spartan text-[clamp(44px,14vw,55px)] font-medium tracking-[-3px] drop-shadow-md 2lg:text-[85px]">
                 Contact Us
               </h1>
               <span className="text-center font-spartan text-[15px] font-light 2lg:text-[18px]">
@@ -60,12 +60,12 @@ const Contact = ({ title, body, images }) => {
                 >
                   <img src={fb} className="hover:scale-105"></img>
                 </a>
-                <a href="mailto:test@gmail.com">
+                <a href="mailto:drmehrg@gmail.com">
                   <img src={ml} className="hover:scale-105" href=""></img>
                 </a>
               </div>
               {/* <div className="flex items-center justify-center">
-              <a href="mailto:test@gmail.com">
+              <a href="mailto:drmehrg@gmail.com">
                 <Button
                   bordered
                   label="Schedule An Appointment"
@@ -105,9 +105,8 @@ const Contact = ({ title, body, images }) => {
           <div className="flex w-full items-center justify-center max-2lg:mt-10 2lg:w-1/2">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.8266157458177!2d-117.59833838479707!3d33.64236188071774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcda8b99aa1bd5%3A0x72593a3c2f1b18e6!2s30212%20Tomas%2C%20Rancho%20Santa%20Margarita%2C%20CA%2092688!5e0!3m2!1sen!2sus!4v1702394653443"
-              width="500"
-              height="350"
-              className="shadow-lg"
+              title="Map to Acupuncture & Medical Center"
+              className="h-[300px] w-full max-w-[500px] border-0 shadow-lg sm:h-[350px]"
               // style="border:0;"
               allowFullScreen=""
               loading="lazy"
@@ -117,7 +116,7 @@ const Contact = ({ title, body, images }) => {
         </div>
 
         <div className="mt-10 flex items-center justify-center">
-          <span className="z-10 mt-5 text-start font-spartan text-[18px] font-light text-[#D6D6D6]">
+          <span className="z-10 mt-5 text-start font-spartan text-[17px] font-light text-[#D6D6D6] sm:text-[18px]">
             Acupuncture and Medical Center can be reached during normal business
             hours by phone. If you have a medical emergency, please dial 911. If
             you have questions about our services, accepted forms of insurance,
